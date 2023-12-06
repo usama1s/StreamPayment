@@ -1,0 +1,425 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+.backgroundimage::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 543px;
+  height: 368px;
+  background: url(../img/footer-pattern-2.png) no-repeat;
+}
+
+.backgroundimage::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: 0px;
+  top: 0px;
+  width: 505px;
+  height: 334px;
+  background: url(../img/footer-pattern-1.png) no-repeat;
+}
+
+/*All code Below this is for the testing demo plain div*/
+
+:root {
+  --width: 400px;
+  --height: 100px;
+  --top-color: #f44336;
+  --bottom-color: #2196f3;
+  --vertical-angle: 108.5deg;
+  --horizontal-angle: 18.5deg;
+}
+
+.separator {
+  width: var(--width);
+  height: var(--height);
+  overflow: hidden;
+}
+
+.separator::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--top-color);
+  transform: skewY(calc(-1 * var(--horizontal-angle)));
+  transform-origin: bottom left;
+}
+
+.separator::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--bottom-color);
+  transform: skewY(calc(-1 * var(--horizontal-angle)));
+  transform-origin: bottom left;
+}
+
+.vertical .separator::before,
+.vertical .separator::after {
+  transform: skewY(var(--vertical-angle));
+}
+
+.separator.reverse {
+  transform: rotateY(180deg);
+}
+
+.vertical .separator.reverse {
+  transform: rotateX(180deg);
+}
+
+
+/* navbar */
+nav{
+  border: 1px solid #ffffff;
+}
+nav .top-nav>div{
+  
+}
+nav .top-nav{
+  position: relative;
+  height: 122px;
+  padding-left: 25%;
+  background: linear-gradient(45deg, white 25%, black 25%, black 100%);
+  display: flex;
+  align-items: center;
+}
+.nav-contact-links{
+  list-style: none;
+  padding-left: 100px;
+  display: flex;
+  gap: 50px;
+}
+.nav-contact-links li{
+  display: inline-block;
+}
+.nav-contact-links li a{
+  color: #ffffff;
+font-size: 24px;
+
+}
+.nav-contact-links li a i{
+  margin-right: 10px;
+  width: 32px;
+}
+nav .top-nav .logo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 357px;
+}
+nav .bottom-nav>div{
+  height: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+nav .bottom-nav p{
+  line-height: 30px;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+nav .bottom-nav .dropdown button{
+
+}
+nav .bottom-nav .dropdown-menu{
+
+}
+nav .bottom-nav .dropdown-menu a{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.contact-links,
+.footer-links{
+  padding: 0
+}
+.contact-links li,
+.footer-links li{
+  list-style: none;
+  transition: transform 0.4s ease-in;
+}
+.contact-links li a,
+.footer-links li a{
+  position: relative;
+  color: #afd3f3 !important;
+    font-size: 14px; 
+}
+.footer-links li a{
+  padding-left: 15px;
+}
+.footer-links li:hover  {
+  color: #ffffff;
+  transform: translateX(8px);
+  text-decoration: underline;
+}
+.contact-links li a:hover{
+  text-decoration: none;
+}
+.footer-links li:hover a{
+  color: #ffffff ;
+}
+.footer-links li a::before{
+  position: absolute;
+  content: "\f105";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'FontAwesome';
+  font-size: 11px;
+}
+
+.footer_heading {
+  color: #ffffff;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/* left sidebar */
+.welcome p{
+  font-size: 40px;
+  
+color: #ffffff;
+}
+.welcome{
+  padding: 50px;
+}
+.welcome p span{
+  font-weight: bold;
+}
+main{
+  display: flex;
+}
+.left-pane{
+width: 25%;
+flex: 25%;
+background-color: #4664e6;
+}
+.right-pane{
+  width: 75%;
+  flex: 75%;
+}
+.sidebar-links{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 50px;
+  
+}
+.sidebar-links li{
+display: block;
+height: 82px;
+}
+.sidebar-links li a{
+  font-size: 40px;
+  
+  color: #ffffff;
+  border-radius: 20px 0 0 20px;
+  text-decoration: none;
+height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+}
+.sidebar-links li a i{
+  margin-right: 20px;
+  width: 50px;
+}
+.sidebar-links li a:hover,
+.sidebar-links li a.active{
+  color: #4664e6;
+  background-color: #ffffff;
+
+}
+
+
+
+
+/* balance card */
+.balance-card{padding: 0;border: 20px solid #b5b5b5;border-radius: 30px;/* width: calc(100% + 40px); *//* position: absolute; */}
+.balance-card .top{
+  padding: 30px 35px 20px 50px;
+  background: #4664e6;
+  border-radius: 30px;
+  min-height: 382px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+.balance-card .top .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.balance-card .top .title h2{
+
+    font-size: 40px;
+    font-family: "Arial";
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.balance-card .top h3{font-size: 72px;font-weight: bold;color: #ffffff;margin-bottom: 40px;margin-top: 10px;}
+
+.balance-card .top p{
+
+    font-size: 30px;
+    
+  
+    color: #ffffff;
+  
+}
+
+.balance-card .top p span{
+  font-weight: bold;
+}
+.balance-card .bottom{padding: 20px 20px 20px 20px;}
+.balance-card .bottom div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 40px;
+} 
+.balance-card .bottom div:nth-last-of-type(1){
+  margin-bottom: 0;
+}
+.balance-card .bottom div p{
+    font-size: 20px;
+    
+    color: #000000;
+    font-weight: bold;  
+    margin: 0;
+}
+.balance-card .bottom div span{
+color: #4664e6;
+font-size: 20px;
+
+font-weight: bold;  
+}
+
+
+
+
+/* payment card */
+.payment-card{
+
+border: 1px solid #b5b5b5;
+
+border-radius: 5px;
+
+padding: 20px;
+
+position: relative;
+
+overflow: hidden;
+
+min-height: 260px;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: space-between;
+}
+.corner-check{
+
+width: 62px;
+
+height: 62px;
+
+position: absolute;
+
+right: 0;
+
+top: 0;
+
+background: linear-gradient(45deg,transparent 50%, #b5b5b5 50%);
+}
+.corner-check span{
+
+position: absolute;
+
+top: 2px;
+
+right: 2px;
+
+border-radius: 50%;
+
+background: #4664e6;
+
+display: flex;
+
+width: 30px;
+
+height: 30px;
+
+align-items: center;
+
+justify-content: center;
+}
+.corner-check span i{
+
+color: #ffffff;
+
+font-size: 135%;
+}
+.payment-card h2{
+
+font-size: 26px;
+
+color: #4664e6;
+
+font-weight: bold;
+
+margin-bottom: 20px;
+}
+.payment-card p{
+
+font-size: 20px;
+
+color: #000000;
+
+font-weight: 100;
+
+margin-bottom: 45px;
+}
+.payment-card button{font-size: 17px;border-radius: 5px;color: #ffffff;background-color: #4664e6;height: 48px;display: flex;align-items: center;justify-content: center;padding: 0 20px;margin-left: auto;border: 0;}
