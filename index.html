@@ -23,34 +23,85 @@
     <title>Strem Payment</title>
   </head>
   <body>
-    <nav>
-      <div class="top-nav">
+    <main class="overflow-hidden position-relative">
+      <nav>
+        <div class="top-nav">
+          <img
+            class="logo"
+            src="./assests/img/StreamPaymentLogo.png"
+            alt="logo"
+            width="200"
+          />
+
+          <ul class="nav-contact-links">
+            <li class="">
+              <a href="mail:hello@streampayment.com" class="text-30 text-white">
+                <i class="fa-regular fa-envelope"></i>hello@streampayment.com</a
+              >
+            </li>
+            <li class="">
+              <a href="tel:1-888-521-3478" class="text-30 text-white">
+                <i class="pr-2 icon fa fa-phone"></i>1-888-521-3478
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-nav">
+          <div class="px-4">
+            <p class="text-40 font-weight-bold">Dashboard</p>
+            <div class="dropdown">
+              <button
+                class="btn btn-light dropdown-toggle text-40 px-3"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Micheal Smith
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item  text-30" href="#">Home</a>
+                <a class="dropdown-item  text-30" href="#">About</a>
+                <a class="dropdown-item  text-30" href="#">FAQ</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <img
           class="logo"
           src="./assests/img/StreamPaymentLogo.png"
           alt="logo"
           width="200"
         />
+        <button
+          class="sidebar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
 
-        <ul class="nav-contact-links">
-          <li class="">
-            <a href="mail:hello@streampayment.com" class="">
-              <i class="fa-regular fa-envelope"></i>hello@streampayment.com</a
-            >
-          </li>
-          <li class="">
-            <a href="tel:1-888-521-3478">
-              <i class="pr-2 icon fa fa-phone"></i>1-888-521-3478
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="bottom-nav">
-        <div class="container">
-          <p>Dashboard</p>
-          <div class="dropdown">
+      <main class="d-flex">
+        <div
+          class="left-pane sidebar collapse navbar-collapse"
+          id="navbarTogglerDemo02"
+        >
+          <div class="welcome p-5">
+            <p class="text-40 text-white">
+              Welcome, <br />
+              <span class="font-weight-bold"> Michael Smith</span>
+            </p>
+          </div>
+
+          <div class="dropdown sidebar-profile mx-auto">
             <button
-              class="btn btn-light dropdown-toggle"
+              class="btn btn-light dropdown-toggle text-40"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -60,201 +111,403 @@
               Micheal Smith
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">About</a>
-              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item  text-30" href="#">Home</a>
+              <a class="dropdown-item  text-30" href="#">About</a>
+              <a class="dropdown-item  text-30" href="#">FAQ</a>
             </div>
           </div>
+          <ul class="nav sidebar-links" id="myTab" role="tablist">
+            <li class="">
+              <a
+                class="active text-40"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                ><i class="fa-solid fa-table-cells-large"></i> Home</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=" text-40"
+                id="home-tab"
+                data-toggle="tab"
+                href="#payment"
+                role="tab"
+                aria-controls="payment"
+                aria-selected="true"
+                ><i class="fa-solid fa-dollar-sign"></i> Payment</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=" text-40"
+                id="home-tab"
+                data-toggle="tab"
+                href="#plan"
+                role="tab"
+                aria-controls="plan"
+                aria-selected="true"
+                ><i class="fa-regular fa-calendar-minus"></i> Create a Plan</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=" text-40"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                ><i class="fa-solid fa-user-pen"></i> Profile</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=" text-40"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#faq"
+                role="tab"
+                aria-controls="faq"
+                aria-selected="false"
+                ><i class="fa-solid fa-question"></i>FAQs</a
+              >
+            </li>
+            <li class="">
+              <a
+                class=" text-40"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#report"
+                role="tab"
+                aria-controls="report"
+                aria-selected="false"
+                ><i class="fa-solid fa-circle-exclamation"></i>Report Issue</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
+        <div class="right-pane">
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <h4 class="text-40 font-weight-bold">Getting Started</h4>
+              <h5 class="text-30">View open accounts here, let’s get started!</h5>
+              <div class="row mt-4">
+                <div class="col-lg-4">
+                  <div class="balance-card">
+                    <div class="top">
+                      <div class="title">
+                        <h2 class="text-40 font-weight-bold text-white">Balance</h2>
+                        <img
+                          class="logo"
+                          src="assests/img/stream-logo-white.png"
+                          alt=""
+                        />
+                      </div>
 
-
-
-    <main>
-      <div class="left-pane">
-        <div class="welcome">
-          
-          <p> Welcome, <br> 
-            <span> Michael Smith</span></p>
-        </div>
-        <ul class="nav sidebar-links" id="myTab" role="tablist">
-          <li class="">
-            <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells-large"></i> Home</a>
-          </li>
-          <li class="">
-            <a class="" id="home-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="true"><i class="fa-solid fa-dollar-sign"></i> Payment</a>
-          </li>
-          <li class="">
-            <a class="" id="home-tab" data-toggle="tab" href="#plan" role="tab" aria-controls="plan" aria-selected="true"><i class="fa-regular fa-calendar-minus"></i> Create a Plan</a>
-          </li>
-          <li class="">
-            <a class="" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-user-pen"></i> Profile</a>
-          </li>
-          <li class="">
-            <a class="" id="contact-tab" data-toggle="tab" href="#faq" role="tab" aria-controls="faq" aria-selected="false"><i class="fa-solid fa-question"></i>FAQs</a>
-          </li>
-          <li class="">
-            <a class="" id="contact-tab" data-toggle="tab" href="#report" role="tab" aria-controls="report" aria-selected="false"><i class="fa-solid fa-circle-exclamation"></i>Report Issue</a>
-          </li>
-        </ul>
-      </div>
-      <div class="right-pane">
-        
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="balance-card">
-                  <div class="top">
-                    <div class="title">
-                      <h2>Balance</h2>
-                      <img class="logo" src="assests/img/stream-logo-white.png" alt="">
-                      
+                      <h3 class="text-72 text-white mb-5 mt-3 font-weight-bold">$3,000.00</h3>
+                      <p class="text-30 text-white mb-5">File no. <span class="font-weight-bold">AGR707</span></p>
                     </div>
+                    <div class="p-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-4"
+                      >
+                        <p class="text-20 font-weight-bold mb-0">Status</p>
+                        <span class="text-20 font-weight-bold text-purple  text-right ml-2"
+                          >Active</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-4"
+                      >
+                        <p class="text-20 font-weight-bold mb-0">Agency</p>
+                        <span class="text-20 font-weight-bold text-purple  text-right ml-2"
+                          >Accounts General Recovery</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-4"
+                      >
+                        <p class="text-20 font-weight-bold mb-0">
+                          Type of Account
+                        </p>
+                        <span class="text-20 font-weight-bold text-purple text-right ml-2"
+                          >Royal Bank of Canada VISA</span
+                        >
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-0"
+                      >
+                        <p class="text-20 font-weight-bold mb-0">
+                          Original Account Number
+                        </p>
+                        <span class="text-20 font-weight-bold text-purple  text-right ml-2"
+                          >XXX-XXXX-XX-X</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
+                  >
+                    <div class="corner-check">
+                      <span class="blue-round-check"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </div>
+                    <h2 class="text-26 text-purple font-weight-bold mb-3">Choose a Payment Plan</h2>
+                    <p class="text-20 mb-5">
+                      Securely connect an approved payment plan to your
+                      StreamPayment account, we’ll walk you through the process.
+                    </p>
+
+                    <button class="blue-btn ml-auto">Select Plan</button>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
+                  >
+                    <h2 class="text-26 text-purple font-weight-bold mb-3">Payment Plan</h2>
+                    <div class="mb-3">
+                      <p class="text-20 font-weight-bold mb-0">Basic Plan</p>
+                      <p class="text-20">
+                        Billing monthly - Next invoice on August 2nd, 2021
+                      </p>
+                    </div>
+                    <div
+                      class="d-flex flex-row align-items-center justify-content-between"
+                    >
+                      <p
+                        class="text-16 font-weight-bold d-flex align-items-center gap-1"
+                      >
+                        <span
+                          class="blue-round-check position-static mr-2"
+                          style="
+                            transform: scale(0.6);
+                            transform-origin: center;
+                          "
+                          ><i class="fa-solid fa-check"></i
+                        ></span>
+                        Premium plans are available for this account
+                      </p>
+                      <button class="blue-btn ml-2">Upgrade</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
+                  >
+                    <h2 class="text-26 text-purple font-weight-bold mb-3">Your Progress</h2>
+ 
+
+                   
+
+                    <div class="circle-wrap">
+                      <div class="circle">
+                        
+                        <div class="mask full">
+                          <div class="fill"></div>
+                        </div>
+                       
+                        <div class="mask half">
+                          <div class="fill"></div>
+                        </div>
+
+                        <div class="curve">
+<div></div>
+                        </div>
+                        
+                        <div class="inside-circle">
+                          <span class="text-72 text-purple font-weight-bold"> 25%</span>
+                          <!-- change this value in style.css as well
+                            750/(2250+750) = 25% in HTML
+
+                            750/(2250+750)*180 = 45deg in CSS
+                            find keyword "updatepercentage" in CSS for locations
+                          -->
+                        </div>
+                        
+                      </div>
+                    </div>
+
+
+
                     
-                    <h3>$3,000.00</h3>
-                    <p>File no. <span>AGR707</span></p>
-                  </div>
-                  <div class="bottom">
-                    <div>
-                      <p>Status</p>
-                      <span>Active</span>
-                    </div>
-                    <div>
-                      <p>Agency</p>
-                      <span>Accounts General Recovery</span>
-                    </div>
-                    <div>
-                      <p>Type of Account</p>
-                      <span>Royal Bank of Canada VISA</span>
-                    </div>
-                    <div>
-                      <p>Original Account Number</p>
-                      <span>XXX-XXXX-XX-X</span>
+                    <div class="grey-border mt-2 mb-5"></div>
+                    <div class="">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
+                        <p class="text-20 mb-0">Paid:</p>
+                        <span class="text-20 text-right">$750.00</span>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
+                        <p class="text-20 mb-0">Unpaid:</p>
+                        <span class="text-20 text-right">$2250.00</span>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-0"
+                      >
+                        <p class="text-20 mb-0">Total:</p>
+                        <span class="text-20 text-right">$3000.00</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="payment-card">
-                  <div class="corner-check">
-                    <span><i class="fa-solid fa-check"></i></span>
-                  </div>
-                  <h2>Choose a Payment Plan</h2>
-                  <p>
-                    Securely connect an approved payment plan to your 
-StreamPayment account, we’ll walk you through 
-the process.
-                  </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="payment"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              payment
+            </div>
+            <div
+              class="tab-pane fade"
+              id="plan"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              plan
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              profile
+            </div>
+            <div
+              class="tab-pane fade"
+              id="faq"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              faq
+            </div>
+            <div
+              class="tab-pane fade"
+              id="report"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              report
+            </div>
+          </div>
+        </div>
+      </main>
 
-                  <button>
-                    Select Plan
-                  </button>
-
+      <footer
+        class="backgroundimage"
+        style="background-color: #011a55; position: relative; z-index: 0"
+      >
+        <div class="container">
+          <div class="row justify-content-start py-5">
+            <div class="col-lg-5 col-12">
+              <img class="logo mb-3" alt="" src="./assests/img/stream_payment.svg" width="200" />
+              <p class="text-20 text-white mb-1 m-0 py-4 m-0">
+                A digital approach to debt relief. Secure Payment. On Your
+                Terms.
+              </p>
+              <ul class="contact-links">
+                <li class="pb-3">
+                  <a href="tel:1-888-521-3478" class="text-20">
+                    <span class="pr-2 icon fa fa-phone"></span>1-888-521-3478
+                  </a>
+                </li>
+                <li class="pb-3">
+                  <a href="mail:hello@streampayment.com" class="text-20">
+                    <span class="pr-2 icon fa fa-envelope"></span
+                    >hello@streampayment.com</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a class="text-20">
+                    <span class="pr-2 icon fa fa-home"> </span>8250 Lawson Road,
+                    Suite 219 Milton, ON L9T 5C6
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-7 col-12">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="text-40 text-white font-weight-bold text-uppercase mb-4">Links</h4>
+                  <ul class="footer-links" style="font-size: 14px">
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Home </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> About </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> FAQ </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Contact Us </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Login </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Register </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h4 class="text-40 text-white font-weight-bold text-uppercase mb-4">Support</h4>
+                  <ul class="footer-links" style="font-size: 14px">
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Term of Use </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> Privacy Policiy </a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="text-20" href="/#"> SMS Policiy </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="profile-tab">payment</div>
-          <div class="tab-pane fade" id="plan" role="tabpanel" aria-labelledby="contact-tab">plan</div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="contact-tab">profile</div>
-          <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="contact-tab">faq</div>
-          <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="contact-tab">report</div>
+        </div>
+      </footer>
+      <div class="bottom-footer">
+        <div
+          class="container d-flex flex-md-row flex-column justify-content-md-between justify-content-around align-items-center"
+        >
+          <p class="m-0 text-20">
+            2021 © All rights reserved and operated by
+            <a href="#">Accounts General Recoveries Inc</a>.
+          </p>
+          <p class="m-0 text-20">
+            Follow us:
+            <a href="https://www.linkedin.com/company/accountsgeneral/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </p>
         </div>
       </div>
     </main>
-
-
-
-    <footer
-      class="backgroundimage"
-      style="background-color: #011a55; position: relative; z-index: 0"
-    >
-      <div class="container">
-        <div class="row justify-content-start py-5">
-          <div class="col-lg-5 col-12">
-            <img alt="" src="./assests/img/stream_payment.svg" width="200" />
-            <p class="text mb-1 m-0 py-4 m-0">
-              A digital approach to debt relief. Secure Payment. On Your Terms.
-            </p>
-            <ul class="contact-links">
-              <li class="pb-3">
-                <a href="tel:1-888-521-3478">
-                  <span class="pr-2 icon fa fa-phone"></span>1-888-521-3478
-                </a>
-              </li>
-              <li class="pb-3">
-                <a href="mail:hello@streampayment.com" class="">
-                  <span class="pr-2 icon fa fa-envelope"></span
-                  >hello@streampayment.com</a
-                >
-              </li>
-              <li class="pb-3">
-                <a>
-                  <span class="pr-2 icon fa fa-home"> </span>8250 Lawson Road,
-                  Suite 219 Milton, ON L9T 5C6
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-7 col-12">
-            <div class="row">
-              <div class="col-6">
-                <h4 class="footer_heading">Links</h4>
-                <ul class="footer-links" style="font-size: 14px">
-                  <li class="mb-3">
-                    <a class="" href="/#"> Home </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> About </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> FAQ </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> Contact Us </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> Login </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> Register </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <h4 class="footer_heading">Support</h4>
-                <ul class="footer-links" style="font-size: 14px">
-                  <li class="mb-3">
-                    <a class="" href="/#"> Term of Use </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> Privacy Policiy </a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="" href="/#"> SMS Policiy </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="px-3 py-4" style="background-color: #020f2f">
-      <div class="d-flex justify-content-between container">
-        <p class="w-50 m-0">
-          2021 © All rights reserved and operated by
-          <a href="#">Accounts General Recoveries Inc</a>.
-        </p>
-        <p class="m-0">
-          Follow us:
-          <span class="icon fa fa-linkedin"></span>
-        </p>
-      </div>
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -272,5 +525,19 @@ the process.
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+
+      $(".navbar-collapse")
+        .on("show.bs.collapse", function () {
+          $(this).addClass("show");
+        })
+        .on("hide.bs.collapse", function () {
+          $(this).removeClass("show");
+        });
+
+
+    </script>
   </body>
 </html>
