@@ -23,7 +23,8 @@
     <title>Strem Payment</title>
   </head>
   <body>
-    <main class="overflow-hidden position-relative">
+    <div class="menu-overlay"></div>
+    <main class="main-body overflow-hidden position-relative">
       <nav>
         <div class="top-nav">
           <img
@@ -48,10 +49,10 @@
         </div>
         <div class="bottom-nav">
           <div class="px-4">
-            <p class="text-40 font-weight-bold">Dashboard</p>
+            <p class="text-40_2 font-weight-bold mb-0">Dashboard</p>
             <div class="dropdown">
               <button
-                class="btn btn-light dropdown-toggle text-40 px-3"
+                class="btn btn-light dropdown-toggle text-40_2 px-3"
                 type="button"
                 id="dropdownMenuButton"
                 data-toggle="dropdown"
@@ -101,7 +102,7 @@
 
           <div class="dropdown sidebar-profile mx-auto">
             <button
-              class="btn btn-light dropdown-toggle text-40"
+              class="btn btn-light dropdown-toggle text-40_2"
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -119,7 +120,7 @@
           <ul class="nav sidebar-links" id="myTab" role="tablist">
             <li class="">
               <a
-                class="active text-40"
+                class="active text-40_2"
                 id="home-tab"
                 data-toggle="tab"
                 href="#home"
@@ -131,7 +132,7 @@
             </li>
             <li class="">
               <a
-                class="text-40"
+                class="text-40_2"
                 id="home-tab"
                 data-toggle="tab"
                 href="#payment"
@@ -143,7 +144,7 @@
             </li>
             <li class="">
               <a
-                class="text-40"
+                class="text-40_2"
                 id="home-tab"
                 data-toggle="tab"
                 href="#plan"
@@ -155,7 +156,7 @@
             </li>
             <li class="">
               <a
-                class="text-40"
+                class="text-40_2"
                 id="profile-tab"
                 data-toggle="tab"
                 href="#profile"
@@ -167,7 +168,7 @@
             </li>
             <li class="">
               <a
-                class="text-40"
+                class="text-40_2"
                 id="contact-tab"
                 data-toggle="tab"
                 href="#faq"
@@ -179,7 +180,7 @@
             </li>
             <li class="">
               <a
-                class="text-40"
+                class="text-40_2"
                 id="contact-tab"
                 data-toggle="tab"
                 href="#report"
@@ -204,7 +205,7 @@
                 View open accounts here, let’s get started!
               </h5>
               <div class="row mt-4">
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-5 col-md-6 pb-md-0 pb-3">
                   <div class="balance-card">
                     <div class="top">
                       <div class="title">
@@ -218,17 +219,19 @@
                         />
                       </div>
 
-                      <h3 class="text-72 text-white mb-5 mt-3 font-weight-bold">
+                      <h3
+                        class="text-72 text-white mb-xl-5 mb-2 mt-0 mt-md-3 font-weight-bold"
+                      >
                         $15,487.25
                       </h3>
-                      <p class="text-30 text-white mb-5">
+                      <p class="text-30 text-white mb-xl-5 mb-2">
                         File no.
                         <span class="font-weight-bold">IMADC54C22</span>
                       </p>
                     </div>
                     <div class="p-3">
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Status</p>
                         <span
@@ -237,7 +240,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Agency</p>
                         <span
@@ -246,7 +249,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Client</p>
                         <span
@@ -255,7 +258,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">
                           Type of Account
@@ -279,44 +282,53 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4">
-                  <div
-                    class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
-                  >
-                    <div class="corner-check">
-                      <span class="blue-round-check"
-                        ><i class="fa-solid fa-check"></i
-                      ></span>
-                    </div>
-                    <h2 class="text-26 text-blue font-weight-bold mb-3">
-                      Report an issue
-                    </h2>
-                    <p class="text-20 mb-5">
-                      Need to make a payment but have questions about your bill?
-                      See what you can do to resolve this account.
-                    </p>
+                <div class="col-xl-8 col-lg-7 col-md-6">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12 pb-xl-0 pb-3">
+                      <div
+                        class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
+                      >
+                        <div class="corner-check">
+                          <span class="blue-round-check"
+                            ><i class="fa-solid fa-check"></i
+                          ></span>
+                        </div>
+                        <h2
+                          class="text-26 text-blue font-weight-bold mb-3 pr-4"
+                        >
+                          Report an issue
+                        </h2>
+                        <p class="text-20 mb-5">
+                          Need to make a payment but have questions about your
+                          bill? See what you can do to resolve this account.
+                        </p>
 
-                    <button class="blue-btn ml-auto">Continue</button>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div
-                    class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
-                  >
-                    <div class="corner-check">
-                      <span class="blue-round-check"
-                        ><i class="fa-solid fa-check"></i
-                      ></span>
+                        <button class="blue-btn ml-auto">Continue</button>
+                      </div>
                     </div>
-                    <h2 class="text-26 text-blue font-weight-bold mb-3">
-                      Choose a Payment Plan
-                    </h2>
-                    <p class="text-20 mb-5">
-                      Securely connect an approved payment plan to your
-                      StreamPayment account, we’ll walk you through the process.
-                    </p>
+                    <div class="col-xl-6 col-lg-12">
+                      <div
+                        class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
+                      >
+                        <div class="corner-check">
+                          <span class="blue-round-check"
+                            ><i class="fa-solid fa-check"></i
+                          ></span>
+                        </div>
+                        <h2
+                          class="text-26 text-blue font-weight-bold mb-3 pr-5"
+                        >
+                          Choose a Payment Plan
+                        </h2>
+                        <p class="text-20 mb-5">
+                          Securely connect an approved payment plan to your
+                          StreamPayment account, we’ll walk you through the
+                          process.
+                        </p>
 
-                    <button class="blue-btn ml-auto">Select Plan</button>
+                        <button class="blue-btn ml-auto">Select Plan</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-4">
@@ -511,7 +523,7 @@
               </h5>
               <div class="row mt-4">
                 <div class="col-lg-4">
-                  <div class="balance-card">
+                  <div class="balance-card mb-3">
                     <div class="top">
                       <div class="title">
                         <h2 class="text-40 font-weight-bold text-white">
@@ -524,17 +536,19 @@
                         />
                       </div>
 
-                      <h3 class="text-72 text-white mb-5 mt-3 font-weight-bold">
+                      <h3
+                        class="text-72 text-white mb-xl-5 mb-2 mt-0 mt-md-3 font-weight-bold"
+                      >
                         $15,487.25
                       </h3>
-                      <p class="text-30 text-white mb-5">
+                      <p class="text-30 text-white mb-xl-5 mb-2">
                         File no.
                         <span class="font-weight-bold">IMADC54C22</span>
                       </p>
                     </div>
                     <div class="p-3">
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Status</p>
                         <span
@@ -543,7 +557,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Agency</p>
                         <span
@@ -552,7 +566,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Client</p>
                         <span
@@ -561,7 +575,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">
                           Type of Account
@@ -587,13 +601,16 @@
                 </div>
                 <div class="col-lg-8">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <div>
-                        <img
-                          class="d-block mx-auto mb-3 h-200"
-                          src="assests/img/several-installments-options.png"
-                          alt=""
-                        />
+                    <div class="col-md-4">
+                      <div class="mb-3 mb-md-0">
+                        <div class="img h-200">
+                          <img
+                            class="d-block mx-auto"
+                            src="assests/img/several-installments-options.png"
+                            alt=""
+                          />
+                        </div>
+
                         <p
                           class="text-20 font-weight-bold text-center mb-0 pt-2"
                         >
@@ -602,13 +619,16 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <img
-                          class="d-block mx-auto mb-3 h-200"
-                          src="assests/img/pre-approved-plans.png"
-                          alt=""
-                        />
+                    <div class="col-md-4">
+                      <div class="mb-3 mb-md-0">
+                        <div class="img h-200">
+                          <img
+                            class="d-block mx-auto"
+                            src="assests/img/pre-approved-plans.png"
+                            alt=""
+                          />
+                        </div>
+
                         <p
                           class="text-20 font-weight-bold text-center mb-0 pt-2"
                         >
@@ -616,13 +636,16 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <img
-                          class="d-block mx-auto mb-3 h-200"
-                          src="assests/img/pay-on-time.png"
-                          alt=""
-                        />
+                    <div class="col-md-4">
+                      <div class="mb-3 mb-md-0">
+                        <div class="img h-200">
+                          <img
+                            class="d-block mx-auto"
+                            src="assests/img/pay-on-time.png"
+                            alt=""
+                          />
+                        </div>
+
                         <p
                           class="text-20 font-weight-bold text-center mb-0 pt-2"
                         >
@@ -638,30 +661,32 @@
                     </h3>
                     <div class="grey-border py-3">
                       <div class="row px-3">
-                        <div class="col-lg-10">
+                        <div class="col-sm-9 col-md-10">
                           <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-sm-3 col-4">
                               <p class="text-20 font-weight-bold mb-1">
                                 Basic Plan
                               </p>
                             </div>
-                            <div class="col-lg-9">
-                              <p
-                                class="text-16 font-weight-bold d-flex align-items-center mb-2"
-                              >
+                            <div class="col-sm-9 col-8">
+                              <div class="d-flex align-items-center mb-2">
                                 <span
-                                  class="circle-icon bg-blue text-white text-10 mr-2 d-flex align-items-center justify-content-center"
+                                  class="text-16 font-weight-bold circle-icon bg-blue text-white text-10 mr-2 d-flex align-items-center justify-content-center"
                                 >
                                   <i class="fa-solid fa-check"></i>
                                 </span>
-                                Authorized plan is available for this account
-                                until &nbsp;
-                                <span class="text-blue"> July 22nd, 2021</span>
-                              </p>
+                                <p class="text-16 font-weight-bold mb-0">
+                                  Authorized plan is available for this account
+                                  until &nbsp;
+                                  <span class="text-blue">
+                                    July 22nd, 2021</span
+                                  >
+                                </p>
+                              </div>
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-sm-3 col-4">
                               <p
                                 class="text-20 text-green font-weight-bold mb-0"
                               >
@@ -671,14 +696,16 @@
                                 >
                               </p>
                             </div>
-                            <div class="col-lg-9">
+                            <div class="col-sm-9 col-8">
                               <p class="text-16 mb-0">
                                 Billing monthly for 12 months
                               </p>
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-2">
+                        <div
+                          class="col-sm-3 col-md-2 d-flex align-items-center mt-3 mt-sm-0"
+                        >
                           <button class="blue-btn ml-auto">Select</button>
                         </div>
                       </div>
@@ -708,17 +735,19 @@
                         />
                       </div>
 
-                      <h3 class="text-72 text-white mb-5 mt-3 font-weight-bold">
+                      <h3
+                        class="text-72 text-white mb-xl-5 mb-2 mt-0 mt-md-3 font-weight-bold"
+                      >
                         $15,487.25
                       </h3>
-                      <p class="text-30 text-white mb-5">
+                      <p class="text-30 text-white mb-xl-5 mb-2">
                         File no.
                         <span class="font-weight-bold">IMADC54C22</span>
                       </p>
                     </div>
                     <div class="p-3">
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Status</p>
                         <span
@@ -727,7 +756,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Agency</p>
                         <span
@@ -736,7 +765,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Client</p>
                         <span
@@ -745,7 +774,7 @@
                         >
                       </div>
                       <div
-                        class="d-flex align-items-center justify-content-between mb-4"
+                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">
                           Type of Account
@@ -770,15 +799,18 @@
                   </div>
                 </div>
                 <div class="col-lg-8">
-                  <div class="multistep-form">
+                  <div class="multistep-form mt-3 mt-lg-0">
                     <div class="single-step active">
                       <div class="row">
                         <div class="col-lg-6">
-                          <img
-                            class="d-block mx-auto mb-3 h-200"
-                            src="assests/img/get-fast-results.png"
-                            alt=""
-                          />
+                          <div class="img">
+                            <img
+                              class="d-block mx-auto mb-3 h-200"
+                              src="assests/img/get-fast-results.png"
+                              alt=""
+                            />
+                          </div>
+
                           <p
                             class="text-30 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
@@ -797,7 +829,7 @@
                           </button>
                         </div>
                         <div class="col-lg-6">
-                          <div class="grey-border p-3">
+                          <div class="grey-border p-3 mt-3 mt-lg-0">
                             <h2 class="text-26 text-blue font-weight-bold">
                               How Many Payments?
                             </h2>
@@ -877,11 +909,14 @@
                     <div class="single-step">
                       <div class="row">
                         <div class="col-lg-6">
-                          <img
-                            class="d-block mx-auto mb-3 h-200"
-                            src="assests/img/personlized-results.png"
-                            alt=""
-                          />
+                          <div class="img">
+                            <img
+                              class="d-block mx-auto mb-3 h-200"
+                              src="assests/img/personlized-results.png"
+                              alt=""
+                            />
+                          </div>
+
                           <p
                             class="text-30 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
@@ -900,37 +935,74 @@
                           </button>
                         </div>
                         <div class="col-lg-6">
-                          <div class="grey-border p-3">
+                          <div class="grey-border p-3 mt-3 mt-lg-0">
                             <h3 class="text-26 text-blue font-weight-bold">
-                              Customer Name 
-                              <span class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              Customer Name
+                              <span
+                                class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
+                              >
                                 <i class="fa-solid fa-check"></i>
                               </span>
                             </h3>
-                            <input type="text" class="form-input" placeholder="Customer Name" value="Michael Smith">
+                            <input
+                              type="text"
+                              class="form-input"
+                              placeholder="Customer Name"
+                              value="Michael Smith"
+                            />
 
                             <h3 class="text-26 text-blue font-weight-bold mt-3">
-                              Income and Employment Information 
-                              <span class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              Income and Employment Information
+                              <span
+                                class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
+                              >
                                 <i class="fa-solid fa-check"></i>
                               </span>
                             </h3>
-                            <input type="text" class="form-input mb-2" placeholder="Employer">
-                            <input type="text" class="form-input mb-2" placeholder="Title/Occupation">
-                            <input type="text" class="form-input mb-2" placeholder="Pension Income">
-                            <input type="text" class="form-input mb-2" placeholder="Monthly Income">
-                            <input type="text" class="form-input mb-2" placeholder="Other Income">
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Employer"
+                            />
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Title/Occupation"
+                            />
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Pension Income"
+                            />
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Monthly Income"
+                            />
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Other Income"
+                            />
 
                             <h3 class="text-26 text-blue font-weight-bold mt-3">
-                              Investments 
-                              <span class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              Investments
+                              <span
+                                class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
+                              >
                                 <i class="fa-solid fa-check"></i>
                               </span>
                             </h3>
-                            <input type="text" class="form-input mb-2" placeholder="Savings">
-                            <input type="text" class="form-input mb-0" placeholder="RRSP / GIC’s / Stock’s">
-                    
-                         
+                            <input
+                              type="text"
+                              class="form-input mb-2"
+                              placeholder="Savings"
+                            />
+                            <input
+                              type="text"
+                              class="form-input mb-0"
+                              placeholder="RRSP / GIC’s / Stock’s"
+                            />
                           </div>
                         </div>
                       </div>
@@ -952,11 +1024,13 @@
 
               <div class="row">
                 <div class="col-lg-4">
-                  <img
-                    class="d-block mx-auto mb-3 h-200"
-                    src="assests/img/get-fast-results.png"
-                    alt=""
-                  />
+                  <div class="img">
+                    <img
+                      class="d-block mx-auto mb-3 h-200"
+                      src="assests/img/get-fast-results.png"
+                      alt=""
+                    />
+                  </div>
                   <div
                     class="payment-card grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden"
                   >
@@ -1175,31 +1249,33 @@
         style="background-color: #011a55; position: relative; z-index: 0"
       >
         <div class="container">
-          <div class="row justify-content-start py-5">
+          <div class="row justify-content-start pt-4 pb-2 py-xl-5">
             <div class="col-lg-5 col-12">
-              <img
-                class="logo mb-3"
-                alt=""
-                src="./assests/img/stream_payment.svg"
-                width="200"
-              />
-              <p class="text-20 text-white mb-1 m-0 py-4 m-0">
+              <div class="img mb-3">
+                <img
+                  class="logo"
+                  alt=""
+                  src="./assests/img/stream_payment.svg"
+                  width="200"
+                />
+              </div>
+              <p class="text-20 text-white mb-1 m-0 py-xl-4 pt-2 pb-3 m-0">
                 A digital approach to debt relief. Secure Payment. On Your
                 Terms.
               </p>
               <ul class="contact-links">
-                <li class="pb-3">
+                <li class="pb-2 pb-xl-3">
                   <a href="tel:1-888-521-3478" class="text-20">
                     <span class="pr-2 icon fa fa-phone"></span>1-888-521-3478
                   </a>
                 </li>
-                <li class="pb-3">
+                <li class="pb-2 pb-xl-3">
                   <a href="mail:hello@streampayment.com" class="text-20">
                     <span class="pr-2 icon fa fa-envelope"></span
                     >hello@streampayment.com</a
                   >
                 </li>
-                <li class="pb-3">
+                <li class="pb-2 pb-xl-3">
                   <a class="text-20">
                     <span class="pr-2 icon fa fa-home"> </span>8250 Lawson Road,
                     Suite 219 Milton, ON L9T 5C6
@@ -1211,24 +1287,24 @@
               <div class="row">
                 <div class="col-6">
                   <h4
-                    class="text-40 text-white font-weight-bold text-uppercase mb-4"
+                    class="text-40 text-white font-weight-bold text-uppercase mb-2 mb-xl-4"
                   >
                     Links
                   </h4>
                   <ul class="footer-links" style="font-size: 14px">
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> Home </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> About </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> FAQ </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> Contact Us </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> Login </a>
                     </li>
                     <li class="mb-3">
@@ -1238,18 +1314,18 @@
                 </div>
                 <div class="col-6">
                   <h4
-                    class="text-40 text-white font-weight-bold text-uppercase mb-4"
+                    class="text-40 text-white font-weight-bold text-uppercase mb-2 mb-xl-4"
                   >
                     Support
                   </h4>
                   <ul class="footer-links" style="font-size: 14px">
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> Term of Use </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> Privacy Policiy </a>
                     </li>
-                    <li class="mb-3">
+                    <li class="pb-2 pb-xl-3">
                       <a class="text-20" href="/#"> SMS Policiy </a>
                     </li>
                   </ul>
@@ -1276,8 +1352,6 @@
         </div>
       </div>
     </main>
-
-
 
     <!-- testing multistep form -->
     <!-- <div class="multistep-form">
@@ -1341,22 +1415,76 @@
           });
         });
 
-
       // multistep form
       document.querySelectorAll(".multistep-form").forEach(function (thisForm) {
         thisForm.querySelectorAll(".single-step").forEach(function (thisStep) {
           const nextBtn = thisStep.querySelector(".next-multistep-form");
           nextBtn.addEventListener("click", (event) => {
             currentStep = nextBtn.closest(".single-step");
-            
+
             nextStep = currentStep.nextElementSibling;
             if (nextStep) {
-              currentStep.classList.remove("active")
+              currentStep.classList.remove("active");
               nextStep.classList.add("active");
             }
           });
         });
-        
+      });
+
+      // disable all body when menu opens
+
+      // listen to class change
+      const sidebar = document.querySelector(".sidebar");
+      const options = {
+        attributes: true,
+      };
+      function callback(mutationList, observer) {
+        mutationList.forEach(function (mutation) {
+          if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "class"
+          ) {
+            if (
+              document
+                .getElementsByClassName("sidebar")[0]
+                .classList.contains("show")
+            ) {
+              document.body.classList.add("menu-open");
+              // document.body.style.overflow = 'hidden';
+            } else {
+              document.body.classList.remove("menu-open");
+              // document.body.style.overflow = 'auto';
+            }
+          }
+        });
+      }
+      const observer = new MutationObserver(callback);
+      observer.observe(sidebar, options);
+
+      // close menu on outside click
+      document.querySelector(".menu-overlay").addEventListener("click", () => {
+        if (
+          document
+            .getElementsByClassName("sidebar")[0]
+            .classList.contains("show")
+        ) {
+          document.querySelector(".sidebar-toggler").click();
+        }
+      });
+
+      // close on menu on sidebar change
+      const navLinks = document.querySelectorAll(".sidebar-links a");
+
+      document.querySelectorAll(".sidebar-links a").forEach(function (navLink) {
+        navLink.addEventListener("click", () => {
+          if (
+            document
+              .getElementsByClassName("sidebar")[0]
+              .classList.contains("show")
+          ) {
+            document.querySelector(".sidebar-toggler").click();
+          }
+        });
       });
     </script>
   </body>
