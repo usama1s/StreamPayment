@@ -291,7 +291,7 @@
                           >Account General Recoveries</span
                         >
                       </div>
-                      <div
+                      <!-- <div
                         class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Client</p>
@@ -299,7 +299,7 @@
                           class="text-20 font-weight-bold text-blue text-right ml-2"
                           >Imas Capital</span
                         >
-                      </div>
+                      </div> -->
                       <div
                         class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
@@ -473,7 +473,7 @@
                           >Account General Recoveries</span
                         >
                       </div>
-                      <div
+                      <!-- <div
                         class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
                         <p class="text-20 font-weight-bold mb-0">Client</p>
@@ -481,7 +481,7 @@
                           class="text-20 font-weight-bold text-blue text-right ml-2"
                           >Imas Capital</span
                         >
-                      </div>
+                      </div> -->
                       <div
                         class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
                       >
@@ -1979,6 +1979,7 @@
                         </p>
 
                         <select name="" id="" class="form-input mt-3 mb-2">
+                          <option value="" disabled selected>Select</option>
                           <option value="">Bank 1</option>
                           <option value="">Bank 2</option>
                           <option value="">Bank 3</option>
@@ -2376,14 +2377,18 @@
                             >
                           </p>
 
-                          <div class="d-flex align-items-center mb-3">
-                            <div
+                          <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                              <div
                               class="blue-box d-flex align-items-center justify-content-center"
                             >
                               <span class="text-30 text-blue"
                                 ><i class="mdi mdi-currency-usd"></i
                               ></span>
                             </div>
+                            <p class="text-26 font-weight-bold mb-0 pl-2">Amount:</p>
+                            </div>
+                            
                             <p
                               class="text-26 text-blue font-weight-bold mb-0 pl-3"
                             >
@@ -2427,11 +2432,7 @@
 
                           <h3 class="text-20 font-weight-bold pt-3">
                             Payee Name
-                            <span
-                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                            >
-                              <i class="mdi mdi-check"></i>
-                            </span>
+                            
                           </h3>
                           <input
                             type="text"
@@ -2442,11 +2443,7 @@
 
                           <h3 class="text-20 font-weight-bold">
                             Account Number
-                            <span
-                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                            >
-                              <i class="mdi mdi-check"></i>
-                            </span>
+                            
                           </h3>
                           <input
                             type="text"
@@ -3412,7 +3409,7 @@
               <div class="">
                 <h2 class="text-40 font-weight-bold mb-0">
                   Payment Selected -
-                  <span class="text-blue">Online Banking</span>
+                  <span class="text-blue">Interac E-transfer</span>
                 </h2>
 
                 <p class="text-30 mb-3">
@@ -3780,7 +3777,7 @@
                       <div class="col-md-5">
                         <div class="grey-border p-3 mt-3 mt-md-0">
                           <h2 class="text-26 text-blue font-weight-bold mb-3">
-                            Make a Payment
+                            Send us an Interac E-transfer
                           </h2>
                           <h2 class="text-26 font-weight-bold mb-3">
                             TD Canada Trust
@@ -3792,14 +3789,18 @@
                             >
                           </p>
 
-                          <div class="d-flex align-items-center mb-3">
-                            <div
+                          <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center">
+                              <div
                               class="blue-box d-flex align-items-center justify-content-center"
                             >
                               <span class="text-30 text-blue"
                                 ><i class="mdi mdi-currency-usd"></i
                               ></span>
                             </div>
+                            <p class="text-26 font-weight-bold mb-0 pl-2">Amount:</p>
+                            </div>
+                            
                             <p
                               class="text-26 text-blue font-weight-bold mb-0 pl-3"
                             >
@@ -3809,76 +3810,52 @@
 
                           <div class="bullet-point d-flex text-20">
                             <span>1</span>
-                            <p class="mb-0">Log in to your online bank</p>
+                            <p class="mb-0">Log into your online or mobile 
+                              banking app and select the account</p>
                           </div>
                           <div class="bullet-point d-flex text-20">
                             <span>2</span>
                             <p class="mb-0">
-                              Go to the
-                              <span class="font-weight-bold">bill payment</span>
-                              section
+                              Choose or add our email:
+                              <span class="font-weight-bold">payment@accountsgeneral.com</span>
                             </p>
                           </div>
                           <div class="bullet-point d-flex text-20">
                             <span>3</span>
                             <p class="mb-0">
-                              Select
-                              <span class="font-weight-bold"
-                                >Make a payment</span
-                              >
+                              Enter the amount: 
+                              <span class="font-weight-bold">
+                                (payment amount box auto filled)
+                              </span>
                             </p>
                           </div>
                           <div class="bullet-point d-flex text-20">
                             <span>4</span>
                             <p class="mb-0">
-                              Select<span class="font-weight-bold"
-                                >Add a payee</span
-                              >
+                              Enter your file number 
+	as the security question:
                             </p>
                           </div>
-                          <div class="bullet-point d-flex text-20">
-                            <span>5</span>
-                            <p class="mb-0">Enter the following when asked:</p>
-                          </div>
 
-                          <h3 class="text-20 font-weight-bold pt-3">
-                            Payee Name
-                            <span
-                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                            >
-                              <i class="mdi mdi-check"></i>
-                            </span>
-                          </h3>
                           <input
                             type="text"
                             class="form-input text-blue font-weight-bold mb-3"
-                            placeholder="Paye Name"
-                            value="Accounts General Recoveries"
+                            placeholder="5555"
+                            value="5555"
                           />
 
-                          <h3 class="text-20 font-weight-bold">
-                            Account Number
-                            <span
-                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                            >
-                              <i class="mdi mdi-check"></i>
-                            </span>
-                          </h3>
+                          <div class="bullet-point d-flex text-20">
+                            <span>5</span>
+                            <p class="mb-0">The answer is your last name as it 
+                              appears in our correspondence to you:</p>
+                          </div>
+
                           <input
                             type="text"
                             class="form-input text-blue font-weight-bold"
-                            placeholder="xxxx-xxx-xx"
-                            value="xxxx-xxx-xx"
+                            placeholder="John Doe"
+                            value="John Doe"
                           />
-
-                          <div class="bullet-point d-flex text-20 pb-3 pt-3">
-                            <span>6</span>
-                            <p class="mb-0">
-                              Click
-                              <span class="font-weight-bold">Verify</span>, and
-                              confirm your request
-                            </p>
-                          </div>
 
                           <button
                             data-toggle="modal"
@@ -4260,7 +4237,7 @@
                           <p
                             class="text-26 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
-                            (2 / 6) Get Fast Results
+                            (2 / 6)
                           </p>
                           <p
                             class="text-20 font-weight-bold text-center mb-0 pt-2"
@@ -4448,7 +4425,7 @@
                           <p
                             class="text-26 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
-                            (3 / 6) Get Fast Results
+                            (3 / 6) 
                           </p>
                           <p
                             class="text-20 font-weight-bold text-center mb-0 pt-2"
@@ -4618,7 +4595,7 @@
                           <p
                             class="text-26 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
-                            (4 / 6) Get Fast Results
+                            (4 / 6) 
                           </p>
                           <p
                             class="text-20 font-weight-bold text-center mb-0 pt-2"
@@ -4794,7 +4771,7 @@
                           <p
                             class="text-26 text-blue font-weight-bold text-center mb-0 pt-2"
                           >
-                            (5 / 6) Get Fast Results
+                            (5 / 6) 
                           </p>
                           <p
                             class="text-20 font-weight-bold text-center mb-0 pt-2"
@@ -5991,6 +5968,7 @@
                           </p>
 
                           <select name="" id="" class="form-input mt-3 mb-2">
+                            <option value="" disabled selected>Select</option>
                             <option value="">Bank 1</option>
                             <option value="">Bank 2</option>
                             <option value="">Bank 3</option>
@@ -6402,14 +6380,18 @@
                               >
                             </p>
 
-                            <div class="d-flex align-items-center mb-3">
-                              <div
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <div class="d-flex align-items-center">
+                                <div
                                 class="blue-box d-flex align-items-center justify-content-center"
                               >
                                 <span class="text-30 text-blue"
                                   ><i class="mdi mdi-currency-usd"></i
                                 ></span>
                               </div>
+                              <p class="text-26 font-weight-bold mb-0 pl-2">Amount:</p>
+                              </div>
+                              
                               <p
                                 class="text-26 text-blue font-weight-bold mb-0 pl-3"
                               >
@@ -6457,11 +6439,6 @@
 
                             <h3 class="text-20 font-weight-bold pt-3">
                               Payee Name
-                              <span
-                                class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                              >
-                                <i class="mdi mdi-check"></i>
-                              </span>
                             </h3>
                             <input
                               type="text"
@@ -6472,11 +6449,6 @@
 
                             <h3 class="text-20 font-weight-bold">
                               Account Number
-                              <span
-                                class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center"
-                              >
-                                <i class="mdi mdi-check"></i>
-                              </span>
                             </h3>
                             <input
                               type="text"
@@ -8148,7 +8120,7 @@
                               class="text-20 text-blue"
                             >
                               <i class="pr-2 mdi mdi-email-outline text-red"></i
-                              >hello@streampayment.com</a
+                              >hello@accountgeneral.com</a
                             >
                           </li>
                         </ul>
@@ -8884,7 +8856,7 @@
           slider.addEventListener("input", (event) => {
             const tempSliderValue = event.target.value;
             sliderValue.textContent = tempSliderValue;
-            const progress = (tempSliderValue / slider.max) * 100;
+            const progress = ((tempSliderValue - slider.min) / (slider.max - slider.min)) * 100;
 
             slider.style.background = `linear-gradient(to right, #97d3fd ${progress}%, #f4f4f4 ${progress}%)`;
           });
