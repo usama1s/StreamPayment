@@ -476,16 +476,14 @@ nav .bottom-nav > div {
 nav .bottom-nav .dropdown-menu {
   width: 240px;
 }
-.faq-list .question button{position: relative;padding: 10px 20px 10px 50px !important;width: 100%;text-align: left;cursor: pointer;}
-.faq-list .question button::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: red;
+.faq-list .question button{position: relative;padding: 10px 20px 10px 40px !important;width: 100%;text-align: left;cursor: pointer;}
+
+.faq-list .question button span{position: absolute;left: 0;top: 50%;transform: translateY(-50%) rotate(90deg);font-size: 17px;color: #4664e6;transition: transform 0.4s;}
+.faq-list .question button span:before{
+  display:block;
+}
+.faq-list .question button.collapsed span{
+  transform: translateY(-50%);
 }
 .faq-list .answer{
   
@@ -522,14 +520,9 @@ footer .logo {
 .footer-links li:hover a {
   color: #ffffff;
 }
-.footer-links li a::before {
-  position: absolute;
-  content: "\f105";
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "FontAwesome";
-  font-size: 11px;
+.footer-links li a span {
+
+/* font-size: 11px; */
 }
 
 .bottom-footer {
@@ -580,10 +573,20 @@ footer .logo {
   margin-right: 20px;
   width: 50px;
 }
-.sidebar-links li a:hover,
+.sidebar-links li a:hover{
+  transform: scale(1.05);
+  transform-origin: center left;
+}
 .sidebar-links li a.active {
   color: #4664e6;
   background-color: #ffffff;
+}
+.sidebar-links li a span{width: 40px;height: 100%;display: flex;align-items: center;justify-content: flex-start;}
+.sidebar-links li a span img{
+  height: 30px;
+}
+.sidebar-links li a:not(.active) span img{
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(175%) contrast(100%);
 }
 .sidebar-toggler {
   display: none;
@@ -893,6 +896,9 @@ footer .logo {
   .sidebar-links li a i {
     width: 26px;
     margin-right: 14px;
+  }
+  .sidebar-links li a span img{
+    height: 20px;
   }
   nav .top-nav .logo {
     bottom: 50%;
