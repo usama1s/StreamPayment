@@ -11,7 +11,7 @@ textarea {
   border: none;
   outline: none !important;
 }
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
@@ -87,7 +87,7 @@ ul{
 .text-blue {
   color: #4664e6 !important;
 }
-.text-red{
+.text-red {
   color: red;
 }
 .text-white {
@@ -125,7 +125,7 @@ ul{
 
   font-size: 25px;
 }
-.report-links li a i{
+.report-links li a i {
   width: 40px;
 }
 .active-state {
@@ -143,6 +143,18 @@ ul{
   max-height: 14px;
   border-radius: 50%;
   display: inline-block;
+}
+.big-circle {
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.big-circle span {
+  color: #ffffff;
+  font-size: 40px;
 }
 .bg-blue {
   background: #4664e6;
@@ -195,7 +207,7 @@ ul{
   width: 14px;
   height: 14px;
 }
-.sm-logo{
+.sm-logo {
   max-width: 300px;
   width: 100%;
 }
@@ -476,17 +488,30 @@ nav .bottom-nav > div {
 nav .bottom-nav .dropdown-menu {
   width: 240px;
 }
-.faq-list .question button{position: relative;padding: 10px 20px 10px 40px !important;width: 100%;text-align: left;cursor: pointer;}
-
-.faq-list .question button span{position: absolute;left: 0;top: 50%;transform: translateY(-50%) rotate(90deg);font-size: 17px;color: #4664e6;transition: transform 0.4s;}
-.faq-list .question button span:before{
-  display:block;
+.faq-list .question button {
+  position: relative;
+  padding: 10px 20px 10px 40px !important;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
 }
-.faq-list .question button.collapsed span{
+
+.faq-list .question button span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 17px;
+  color: #4664e6;
+  transition: transform 0.4s;
+}
+.faq-list .question button span:before {
+  display: block;
+}
+.faq-list .question button.collapsed span {
   transform: translateY(-50%);
 }
-.faq-list .answer{
-  
+.faq-list .answer {
 }
 /* footer */
 footer .logo {
@@ -521,8 +546,7 @@ footer .logo {
   color: #ffffff;
 }
 .footer-links li a span {
-
-/* font-size: 11px; */
+  /* font-size: 11px; */
 }
 
 .bottom-footer {
@@ -573,7 +597,7 @@ footer .logo {
   margin-right: 20px;
   width: 50px;
 }
-.sidebar-links li a:hover{
+.sidebar-links li a:hover {
   transform: scale(1.05);
   transform-origin: center left;
 }
@@ -581,12 +605,31 @@ footer .logo {
   color: #4664e6;
   background-color: #ffffff;
 }
-.sidebar-links li a span{width: 40px;height: 100%;display: flex;align-items: center;justify-content: flex-start;}
-.sidebar-links li a span img{
+.sidebar-links li a span {
+  position: relative;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sidebar-links li a span img {
   height: 30px;
 }
-.sidebar-links li a:not(.active) span img{
-      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg) brightness(175%) contrast(100%);
+.sidebar-links li a span.notification:after {
+  content: "";
+  position: absolute;
+  right: 15%;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: red;
+  border-radius: 50%;
+}
+.sidebar-links li a:not(.active) span img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(337deg)
+    brightness(175%) contrast(100%);
 }
 .sidebar-toggler {
   display: none;
@@ -897,7 +940,7 @@ footer .logo {
     width: 26px;
     margin-right: 14px;
   }
-  .sidebar-links li a span img{
+  .sidebar-links li a span img {
     height: 20px;
   }
   nav .top-nav .logo {
@@ -958,11 +1001,10 @@ footer .logo {
   .bottom-footer > div {
     min-height: 80px;
   }
-  .circle-wrap{
-    
-width: 200px;
-    
-height: 200px;
+  .circle-wrap {
+    width: 200px;
+
+    height: 200px;
   }
 }
 @media screen and (max-width: 1200px) {
