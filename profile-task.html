@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css" rel="stylesheet" />
+
+  <title>Stream Payment</title>
+</head>
+
+<body>
+  <div class="menu-overlay"></div>
+  <main class="main-body overflow-hidden position-relative">
+    <nav>
+      <div class="top-nav">
+        <img class="logo" src="./assets/images/StreamPaymentLogo.png" alt="logo" width="200" />
+
+        <ul class="nav-contact-links">
+          <li class="">
+            <a href="mail:hello@streampayment.com" class="text-30 text-white">
+              <i class="pr-2 mdi mdi-email-outline"></i>hello@streampayment.com</a>
+          </li>
+          <li class="">
+            <a href="tel:1-888-521-3478" class="text-30 text-white">
+              <i class="pr-2 mdi mdi-phone"></i>1-888-521-3478
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-nav">
+        <div class="px-4">
+          <p class="text-40_2 font-weight-bold mb-0">Dashboard</p>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle text-40_2 px-3" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Micheal Smith
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item text-30" href="#">Home</a>
+              <a class="dropdown-item text-30" href="#">About</a>
+              <a class="dropdown-item text-30" href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="logo" src="./assets/images/StreamPaymentLogo.png" alt="logo" width="200" />
+      <button class="sidebar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="mdi mdi-menu"></i>
+      </button>
+    </nav>
+
+    <main class="d-flex">
+      <div class="left-pane sidebar collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="welcome p-5">
+          <p class="text-40 text-white">
+            Welcome, <br />
+            <span class="font-weight-bold"> Michael Smith</span>
+          </p>
+        </div>
+
+        <div class="dropdown sidebar-profile mx-auto">
+          <button class="btn btn-light dropdown-toggle text-40_2" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Micheal Smith
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item text-30" href="#">Home</a>
+            <a class="dropdown-item text-30" href="#">About</a>
+            <a class="dropdown-item text-30" href="#">FAQ</a>
+          </div>
+        </div>
+        <ul class="nav sidebar-links" id="myTab" role="tablist">
+          <li class="">
+            <a class="active text-40_2" id="home-tab" data-toggle="tab" href="#profile" role="tab"
+              aria-controls="profile" aria-selected="true">
+              <span>
+                <img src="assets/images/icon-profile.svg" alt="" />
+              </span>
+              Profile
+            </a>
+          </li>
+          <li class="">
+            <a class=" text-40_2" id="task-tab" data-toggle="tab" href="#task" role="tab" aria-controls="task"
+              aria-selected="true">
+              <span>
+                <img src="assets/images/icon-custom-pan.svg" alt="" />
+              </span>
+              Tasks
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-pane">
+        <div class="tab-content" id="myTabContent">
+
+
+          <!-- profile page start -->
+          <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h4 class="text-40 font-weight-bold mb-0">Profile</h4>
+            <h5 class="text-30">
+              View or update information for your account.
+            </h5>
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <div class="img">
+                  <img class="d-block mx-auto mb-3 h-200" src="assets/images/profile.png" alt="">
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-6 mt-lg-0 mt-3">
+                <div class="grey-border p-3">
+                  <h3 class="text-26 text-blue font-weight-bold">
+                    Profile Information
+                  </h3>
+                  <p class="text-20 mb-1 mt-3">Country</p>
+                  <select name="" id="" class="form-input">
+                    <option value="">USA</option>
+                    <option value="">Canada</option>
+                    <option value="">UK</option>
+                  </select>
+                  <p class="text-20 mb-1 mt-3">Province</p>
+                  <select name="" id="" class="form-input">
+                    <option value="">USA</option>
+                    <option value="">Canada</option>
+                    <option value="">UK</option>
+                  </select>
+                  <p class="text-20 mb-1 mt-3">City</p>
+                  <select name="" id="" class="form-input">
+                    <option value="">USA</option>
+                    <option value="">Canada</option>
+                    <option value="">UK</option>
+                  </select>
+                  <p class="text-20 mb-1 mt-3">Address</p>
+                  <input type="text" class="form-input" placeholder="Address">
+                  <p class="text-20 mb-1 mt-3">Postal Code</p>
+                  <input type="text" class="form-input" placeholder="Postal Code">
+
+                  <button class="blue-btn ml-auto px-5 mt-3" data-toggle="modal" data-target="#profile-update-modal">
+                    Save
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-lg-0 mt-3">
+
+                <div class="grey-border p-3">
+                  <h3 class="text-26 text-blue font-weight-bold">
+                    Update Password
+                  </h3>
+
+                  <p class="text-20 mb-1 mt-3">Current Password</p>
+                  <input type="text" class="form-input" placeholder="Current Password">
+                  <p class="text-20 mb-1 mt-3">New Password</p>
+                  <input type="text" class="form-input" placeholder="New Password">
+                  <p class="text-20 mb-1 mt-3">Confirm Password</p>
+                  <input type="text" class="form-input" placeholder="Confirm Password">
+
+                  <button class="blue-btn ml-auto px-5 mt-3" data-toggle="modal" data-target="#profile-update-modal">
+                    Update Password
+                  </button>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal fade" id="profile-update-modal" tabindex="-1" role="dialog"
+              aria-labelledby="profile-update-modalLabel" aria-hidden="true">
+              <div class="modal-dialog w-100 h-100 my-0 d-flex align-items-center justify-content-center"
+                role="document">
+                <div class="modal-content">
+                  <div class="modal-body py-5">
+                    <div class="blue-box d-flex align-items-center justify-content-center mx-auto mb-5">
+                      <span class="blue-round-check position-static" style="border-width: 3px"><i
+                          class="mdi mdi-check"></i></span>
+                    </div>
+
+                    <h3 class="text-30 text-blue font-weight-bold text-center">
+                      New Information Saved
+                    </h3>
+
+                    <p class="text-20 text-center font-weight-bold">
+                      Your profile has been updated.
+                    </p>
+
+                    <button type="button" class="blue-btn mx-auto mt-5" data-dismiss="modal">
+                      Okay
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- profile page end  -->
+
+
+          <div class="tab-pane fade" id="task" role="tabpanel" aria-labelledby="task-tab">
+            <div class="multistep-form mt-3 mt-lg-0">
+              <!-- 1/6 payment step -->
+              <div class="single-step active">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/get-fast-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (1 / 6) Get Fast Results
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Get your offer reviewed by completing a financial
+                          capacity assessment form.
+                        </p>
+                        <button class="blue-btn size-lg mx-auto mt-3 next-multistep-form">
+                          Continue
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h2 class="text-26 text-blue font-weight-bold">
+                            How Many Payments?
+                          </h2>
+                          <div class="slider-range">
+                            <input type="range" class="slider" min="1" max="11" value="0" id="range" />
+                            <p class="text-20 font-weight-bold mt-3">
+                              <span class="value">0</span> Month(s)
+                            </p>
+                          </div>
+                          <h2 class="text-26 text-blue font-weight-bold">
+                            Apply Discount?
+                          </h2>
+
+                          <div class="slider-range">
+                            <input type="range" class="slider" min="0" max="20" value="0" id="range" />
+                            <p class="text-20 font-weight-bold mt-3 mb-0">
+                              Total savings of
+                              <span class="value">0</span>%
+                            </p>
+                          </div>
+
+                          <div class="px-2 my-4">
+                            <div class="grey-border"></div>
+                          </div>
+
+                          <h2 class="text-26 text-blue font-weight-bold">
+                            Monthly Payable Amount
+                          </h2>
+
+                          <div class="d-flex align-items-center">
+                            <div class="blue-box d-flex align-items-center justify-content-center">
+                              <span class="text-30 text-blue"><i class="mdi mdi-currency-usd"></i></span>
+                            </div>
+                            <p class="text-20 font-weight-bold mb-0 pl-3">
+                              $500.00
+                            </p>
+                          </div>
+
+                          <h2 class="text-26 text-blue font-weight-bold mt-4">
+                            Total Monthly Savings
+                          </h2>
+
+                          <div class="d-flex align-items-center">
+                            <div class="blue-box d-flex align-items-center justify-content-center">
+                              <span class="text-30 text-blue"><i class="mdi mdi-currency-usd"></i></span>
+                            </div>
+                            <p class="text-20 font-weight-bold mb-0 pl-3">
+                              $0.00
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2/6 payment step -->
+              <div class="single-step">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/personlized-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (2 / 6)
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Personalized results provided here help validate the
+                          submited offer.
+                        </p>
+                        <button class="blue-btn size-lg mx-auto mt-3 next-multistep-form">
+                          Continue
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h3 class="text-26 text-blue font-weight-bold">
+                            Customer Name
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input" placeholder="Customer Name" value="Michael Smith" />
+
+                          <h3 class="text-26 text-blue font-weight-bold mt-3">
+                            Income and Employment Information
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Employer" />
+                          <input type="text" class="form-input mb-2" placeholder="Title/Occupation" />
+                          <input type="text" class="form-input mb-2" placeholder="Pension Income" />
+                          <input type="text" class="form-input mb-2" placeholder="Monthly Income" />
+                          <input type="text" class="form-input mb-2" placeholder="Other Income" />
+
+                          <h3 class="text-26 text-blue font-weight-bold mt-3">
+                            Investments
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Savings" />
+                          <input type="text" class="form-input mb-0" placeholder="RRSP / GIC’s / Stock’s" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3/6 payment step -->
+              <div class="single-step">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/personlized-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (3 / 6)
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Personalized results provided here help validate the
+                          submited offer.
+                        </p>
+                        <button class="blue-btn size-lg mx-auto mt-3 next-multistep-form">
+                          Continue
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h3 class="text-26 font-weight-bold">
+                            <span class="text-blue">Housing Expenses</span>
+                            - Monthly
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Monthly Mortgage payment" />
+                          <input type="text" class="form-input mb-2" placeholder="Rent" />
+                          <input type="text" class="form-input mb-2" placeholder="Phone / TV / Internet" />
+
+                          <input type="text" class="form-input mb-2" placeholder="Hydro" />
+
+                          <input type="text" class="form-input mb-2" placeholder="Natural Gas" />
+
+                          <input type="text" class="form-input mb-0" placeholder="Water" />
+
+                          <h3
+                            class="text-26 font-weight-bold mt-1 mb-0 pl-3 d-flex align-items-center justify-content-between">
+                            <span class="text-blue">Total</span>
+                            <span>$0.00</span>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 4/6 payment step -->
+              <div class="single-step">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/personlized-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (4 / 6)
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Personalized results provided here help validate the
+                          submited offer.
+                        </p>
+                        <button class="blue-btn size-lg mx-auto mt-3 next-multistep-form">
+                          Continue
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h3 class="text-26 font-weight-bold">
+                            <span class="text-blue">Living Expenses</span>
+                            - Monthly
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Food" />
+                          <input type="text" class="form-input mb-2" placeholder="Child Care" />
+                          <input type="text" class="form-input mb-2" placeholder="Personal Care" />
+
+                          <input type="text" class="form-input mb-2" placeholder="Medical" />
+
+                          <input type="text" class="form-input mb-2" placeholder="Alimony / Spousal Support" />
+
+                          <input type="text" class="form-input mb-2" placeholder="Gym Membership" />
+
+                          <input type="text" class="form-input mb-0" placeholder="Entertainment" />
+
+                          <h3
+                            class="text-26 font-weight-bold mt-1 mb-0 pl-3 d-flex align-items-center justify-content-between">
+                            <span class="text-blue">Total</span>
+                            <span>$0.00</span>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 5/6 payment step -->
+              <div class="single-step">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/personlized-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (5 / 6)
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Personalized results provided here help validate the
+                          submited offer.
+                        </p>
+                        <button class="blue-btn size-lg mx-auto mt-3 next-multistep-form">
+                          Continue
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h3 class="text-26 font-weight-bold">
+                            <span class="text-blue">Transportation</span>
+                            - Monthly
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Public Transit" />
+                          <input type="text" class="form-input mb-2" placeholder="Gas Parking" />
+                          <input type="text" class="form-input mb-0" placeholder="Vehicle Maintenance" />
+
+                          <h3
+                            class="text-26 font-weight-bold mt-1 mb-2 pl-3 d-flex align-items-center justify-content-between">
+                            <span class="text-blue">Total</span>
+                            <span>$0.00</span>
+                          </h3>
+
+                          <h3 class="text-26 font-weight-bold">
+                            <span class="text-blue">Insurance</span> - Monthly
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Vehicle" />
+                          <input type="text" class="form-input mb-2" placeholder="Home" />
+                          <input type="text" class="form-input mb-2" placeholder="Life" />
+                          <input type="text" class="form-input mb-0" placeholder="Other" />
+
+                          <h3
+                            class="text-26 font-weight-bold mt-1 mb-2 pl-3 d-flex align-items-center justify-content-between">
+                            <span class="text-blue">Total</span>
+                            <span>$0.00</span>
+                          </h3>
+
+                          <h3 class="text-26 font-weight-bold">
+                            <span class="text-blue">Taxes</span> - Anually
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Government" />
+                          <input type="text" class="form-input mb-2" placeholder="Property" />
+                          <input type="text" class="form-input mb-0" placeholder="Other" />
+
+                          <h3
+                            class="text-26 font-weight-bold mt-1 mb-0 pl-3 d-flex align-items-center justify-content-between">
+                            <span class="text-blue">Total</span>
+                            <span>$0.00</span>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 6/6 payment step -->
+              <div class="single-step">
+                <h2 class="text-40 font-weight-bold mb-0">
+                  Want It Tailored, Create Your Own Ideal Plan!
+                </h2>
+
+                <p class="text-30">Support you can count on 24/7.</p>
+                <div class="row">
+
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="img">
+                          <img class="d-block mx-auto mb-3 h-200" src="assets/images/get-fast-results.png" alt="" />
+                        </div>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          (6 / 6) Well That Was Easy!
+                        </p>
+                        <p class="text-20 font-weight-bold text-center mb-0 pt-2">
+                          Did we get all the requested information required to
+                          submit your custom offer?
+                        </p>
+
+                        <p class="text-26 text-blue font-weight-bold text-center mb-0 pt-2">
+                          <span
+                            class="circle-icon bg-blue text-white text-10 mr-2 align-middle d-inline-flex align-items-center justify-content-center">
+                            <i style="font-size: 18px" class="mdi mdi-circle-medium"></i>
+                          </span>
+                          Submit My offer
+                        </p>
+
+                        <button data-toggle="modal" data-target="#offer-submitted-modal"
+                          class="blue-btn size-lg mx-auto mt-3">
+                          Submit
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+                          <h3 class="text-26 font-weight-bold text-blue">
+                            Liabilities
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Liability Name" />
+                          <input type="text" class="form-input mb-2" placeholder="Total Amount Owing" />
+                          <input type="text" class="form-input mb-0" placeholder="Monthly Payment Amount" />
+
+                          <button class="blue-btn mr-auto mt-2 mb-2 d-inline-flex">
+                            Add Another
+                          </button>
+
+                          <h3 class="text-26 font-weight-bold pt-1">
+                            Assets
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <input type="text" class="form-input mb-2" placeholder="Asset Name / Description" />
+                          <input type="text" class="form-input mb-0" placeholder="Total Value" />
+                          <button class="blue-btn mr-auto mt-2 mb-2 d-inline-flex">
+                            Add Another
+                          </button>
+
+                          <h3 class="text-26 font-weight-bold pt-1">
+                            Add a Note
+                            <span
+                              class="circle-icon bg-blue text-white text-10 ml-2 align-middle d-inline-flex align-items-center justify-content-center">
+                              <i class="mdi mdi-check"></i>
+                            </span>
+                          </h3>
+                          <textarea class="form-input mb-0" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="grey-border p-3 mt-3 mt-lg-0">
+
+                          <h3 class="text-26 text-blue font-weight-bold mt-3">
+                            Add a note/Collection Notice(s)
+                          </h3>
+                          <textarea class="form-input mb-2" name="" id="" cols="30" rows="10"></textarea>
+                          <div class="d-flex flex-row">
+                            <button class="blue-btn px-0" style="width: 130px">
+                              <i class="mdi mdi-upload mr-2"></i>
+                              Add a File
+                            </button>
+                            <span class="text-16 text-green d-flex align-items-center ml-3">
+                              <span class="blue-round-check position-static d-inline-flex mr-2">
+                                <i class="mdi mdi-check"></i>
+                              </span>
+                              File uploads successfully</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- offer submited modal -->
+
+                <div class="modal fade" id="offer-submitted-modal" tabindex="-1" role="dialog"
+                  aria-labelledby="offer-submitted-modalLabel" aria-hidden="true">
+                  <div class="modal-dialog w-100 h-100 my-0 d-flex align-items-center justify-content-center"
+                    role="document">
+                    <div class="modal-content">
+                      <div class="modal-body py-5">
+                        <div class="blue-box d-flex align-items-center justify-content-center mx-auto mb-5">
+                          <span class="blue-round-check position-static" style="border-width: 3px"><i
+                              class="mdi mdi-check"></i></span>
+                        </div>
+
+                        <h3 class="text-30 text-blue font-weight-bold text-center">
+                          Your Offer Has Been Submitted
+                        </h3>
+
+                        <p class="text-20 text-center">
+                          <span class="font-weight-bold">Thanks for using StreamPayment.</span>
+                          <br />
+                          Check your dashboard for updates, where you’ll see
+                          instructions to complete the custom plan if
+                          approved.
+                        </p>
+
+                        <button type="button" class="blue-btn mx-auto mt-5" data-dismiss="modal">
+                          Okay
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="backgroundimage overflow-hidden" style="background-color: #011a55; position: relative; z-index: 0">
+      <div class="container">
+        <div class="row justify-content-start pt-4 pb-2 py-xl-5">
+          <div class="col-lg-5 col-12">
+            <div class="img mb-3">
+              <img class="logo" alt="" src="./assets/images/stream_payment.svg" width="200" />
+            </div>
+            <p class="text-20 text-white mb-1 m-0 py-xl-4 pt-2 pb-3 m-0">
+              A digital approach to debt relief. Secure Payment. On Your
+              Terms.
+            </p>
+            <ul class="contact-links">
+              <li class="pb-2 pb-xl-3">
+                <a href="tel:1-888-521-3478" class="text-20">
+                  <span class="pr-2 mdi mdi-phone"></span>1-888-521-3478
+                </a>
+              </li>
+              <li class="pb-2 pb-xl-3">
+                <a href="mail:hello@streampayment.com" class="text-20">
+                  <span class="pr-2 mdi mdi-email-outline"></span>hello@streampayment.com</a>
+              </li>
+              <li class="pb-2 pb-xl-3">
+                <a class="text-20">
+                  <span class="pr-2 mdi mdi-home"> </span>8250 Lawson Road,
+                  Suite 219 Milton, ON L9T 5C6
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="row">
+              <div class="col-6">
+                <h4 class="text-40 text-white font-weight-bold text-uppercase mb-2 mb-xl-4">
+                  Links
+                </h4>
+                <ul class="footer-links" style="font-size: 14px">
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#">
+                      <span class="mdi mdi-chevron-right"></span> Home
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> About
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> FAQ
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> Contact Us
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> Login
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> Register
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4 class="text-40 text-white font-weight-bold text-uppercase mb-2 mb-xl-4">
+                  Support
+                </h4>
+                <ul class="footer-links" style="font-size: 14px">
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> Term of Use
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> Privacy
+                      Policiy
+                    </a>
+                  </li>
+                  <li class="pb-2 pb-xl-3">
+                    <a class="text-20" href="/#"><span class="mdi mdi-chevron-right"></span> SMS Policiy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bottom-footer">
+      <div
+        class="container d-flex flex-md-row flex-column justify-content-md-between justify-content-around align-items-center">
+        <p class="m-0 text-20">
+          2021 © All rights reserved and operated by
+          <a href="#">Accounts General Recoveries Inc</a>.
+        </p>
+        <p class="m-0 text-20">
+          Follow us:
+          <a href="https://www.linkedin.com/company/accountsgeneral/">
+            <i class="mdi mdi-linkedin"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- paymen successfull modal -->
+  <div class="modal fade" id="payment-submitted-modal" tabindex="-1" role="dialog"
+    aria-labelledby="payment-submitted-modalLabel" aria-hidden="true">
+    <div class="modal-dialog w-100 h-100 my-0 d-flex align-items-center justify-content-center" role="document">
+      <div class="modal-content">
+        <div class="modal-body py-5">
+          <div class="blue-box d-flex align-items-center justify-content-center mx-auto mb-5">
+            <span class="blue-round-check position-static" style="border-width: 3px"><i
+                class="mdi mdi-check"></i></span>
+          </div>
+
+          <h3 class="text-30 text-blue font-weight-bold text-center">
+            Your Payment Has Been Submitted
+          </h3>
+
+          <p class="text-20 text-center">
+            <span class="font-weight-bold">Thanks for using StreamPayment.</span>
+            <br />
+            Check your dashboard for updates.
+          </p>
+
+          <button type="button" class="blue-btn mx-auto mt-5" data-dismiss="modal">
+            Okay
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- testing multistep form -->
+  <!-- <div class="multistep-form"> 
+      <div class="single-step active">
+        1
+        <button class="next-multistep-form">next</button>
+      </div>
+      <div class="single-step">
+        2
+        <button class="next-multistep-form">next</button>
+      </div>
+      <div class="single-step">
+        3
+        <button class="next-multistep-form">next</button>
+      </div>
+      <div class="single-step">
+        4
+        <button class="next-multistep-form">next</button>
+      </div>
+    </div> -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="
+    https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/scripts/verify.min.js
+    "></script>
+
+  <script>
+    // navbar animation
+    $(".navbar-collapse")
+      .on("show.bs.collapse", function () {
+        $(this).addClass("show");
+      })
+      .on("hide.bs.collapse", function () {
+        $(this).removeClass("show");
+      });
+
+    // custom sliders
+    document
+      .querySelectorAll(".slider-range")
+      .forEach(function (singleSlider) {
+        const slider = singleSlider.querySelector(".slider");
+        const sliderValue = singleSlider.querySelector(".value");
+        slider.addEventListener("input", (event) => {
+          const tempSliderValue = event.target.value;
+          sliderValue.textContent = tempSliderValue;
+          const progress = ((tempSliderValue - slider.min) / (slider.max - slider.min)) * 100;
+
+          slider.style.background = `linear-gradient(to right, #97d3fd ${progress}%, #f4f4f4 ${progress}%)`;
+        });
+      });
+
+    // multistep form
+    document.querySelectorAll(".multistep-form").forEach(function (thisForm) {
+      thisForm.querySelectorAll(".single-step").forEach(function (thisStep) {
+        const nextBtn = thisStep.querySelector(".next-multistep-form");
+        if (nextBtn) {
+          nextBtn.addEventListener("click", (event) => {
+            currentStep = nextBtn.closest(".single-step");
+
+            nextStep = currentStep.nextElementSibling;
+            if (nextStep) {
+              currentStep.classList.remove("active");
+              nextStep.classList.add("active");
+            }
+          });
+        }
+      });
+    });
+
+    // disable all body when menu opens
+
+    // listen to class change
+    const sidebar = document.querySelector(".sidebar");
+    const options = {
+      attributes: true,
+    };
+    function callback(mutationList, observer) {
+      mutationList.forEach(function (mutation) {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          if (
+            document
+              .getElementsByClassName("sidebar")[0]
+              .classList.contains("show")
+          ) {
+            document.body.classList.add("menu-open");
+            // document.body.style.overflow = 'hidden';
+          } else {
+            document.body.classList.remove("menu-open");
+            // document.body.style.overflow = 'auto';
+          }
+        }
+      });
+    }
+    const observer = new MutationObserver(callback);
+    observer.observe(sidebar, options);
+
+    // close menu on outside click
+    document.querySelector(".menu-overlay").addEventListener("click", () => {
+      if (
+        document
+          .getElementsByClassName("sidebar")[0]
+          .classList.contains("show")
+      ) {
+        document.querySelector(".sidebar-toggler").click();
+      }
+    });
+
+    // close on menu on sidebar change
+    const navLinks = document.querySelectorAll(".sidebar-links a");
+
+    document.querySelectorAll(".sidebar-links a").forEach(function (navLink) {
+      navLink.addEventListener("click", () => {
+        if (
+          document
+            .getElementsByClassName("sidebar")[0]
+            .classList.contains("show")
+        ) {
+          document.querySelector(".sidebar-toggler").click();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
