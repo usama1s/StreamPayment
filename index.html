@@ -36,15 +36,29 @@
       <div class="bottom-nav">
         <div class="px-4">
           <p class="text-40_2 font-weight-bold mb-0">Dashboard</p>
-          <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle text-40_2 px-3" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Micheal Smith
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item text-30" href="#">Home</a>
-              <a class="dropdown-item text-30" href="#">About</a>
-              <a class="dropdown-item text-30" href="#">FAQ</a>
+          <div class="d-flex align-items-center">
+            <div class="dropdown">
+              <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="mdi mdi-bell-outline" style="font-size: 32px"></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Item 1</a>
+                <a class="dropdown-item" href="#">Item 2</a>
+                <a class="dropdown-item" href="#">Item 3</a>
+              </div>
+            </div>
+            <div class="dropdown">
+
+              <button class="btn btn-light dropdown-toggle text-40_2 px-3" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Micheal Smith
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item text-30" href="#">Home</a>
+                <a class="dropdown-item text-30" href="#">About</a>
+                <a class="dropdown-item text-30" href="#">FAQ</a>
+              </div>
             </div>
           </div>
         </div>
@@ -58,12 +72,32 @@
 
     <main class="d-flex">
       <div class="left-pane sidebar collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="welcome p-5">
-          <p class="text-40 text-white">
-            Welcome, <br />
-            <span class="font-weight-bold"> Michael Smith</span>
-          </p>
+        <div class="d-flex flex-row justify-content-between">
+          <div class="welcome p-5">
+            <p class="text-40 text-white">
+              Welcome, <br />
+              <span class="font-weight-bold"> Michael Smith</span>
+            </p>
+          </div>
+          <div class="dropdown sidebar-profile mb-0 d-flex align-items-center mr-5">
+            <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="
+    padding: 0;
+  ">
+              <span class="mdi mdi-bell-outline text-white" style="font-size: 32px;"></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
+              style="position: absolute; transform: translate3d(0px, 49px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <!-- Add your dropdown items here -->
+              <a class="dropdown-item" href="#">Item 1</a>
+              <a class="dropdown-item" href="#">Item 2</a>
+              <a class="dropdown-item" href="#">Item 3</a>
+            </div>
+          </div>
         </div>
+
+
+
 
         <div class="dropdown sidebar-profile mx-auto">
           <button class="btn btn-light dropdown-toggle text-40_2" type="button" id="dropdownMenuButton"
@@ -76,6 +110,10 @@
             <a class="dropdown-item text-30" href="#">FAQ</a>
           </div>
         </div>
+
+
+
+
         <ul class="nav sidebar-links" id="myTab" role="tablist">
           <li class="">
             <a class="active text-40_2" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
@@ -175,15 +213,10 @@
                       <p class="text-20 font-weight-bold mb-0">Agency</p>
                       <span class="text-20 font-weight-bold text-blue text-right ml-2">Account General Recoveries</span>
                     </div>
-                    <!-- <div
-                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
-                      >
-                        <p class="text-20 font-weight-bold mb-0">Client</p>
-                        <span
-                          class="text-20 font-weight-bold text-blue text-right ml-2"
-                          >Imas Capital</span
-                        >
-                      </div> -->
+                    <div class="d-flex align-items-center justify-content-between mb-xl-4 mb-2">
+                      <p class="text-20 font-weight-bold mb-0">Client</p>
+                      <span class="text-20 font-weight-bold text-blue text-right ml-2">Imas Capital</span>
+                    </div>
                     <div class="d-flex align-items-center justify-content-between mb-xl-4 mb-2">
                       <p class="text-20 font-weight-bold mb-0">
                         Type of Account
@@ -219,7 +252,7 @@
                       <button class="blue-btn ml-auto">Select Plan</button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-sm-9 mx-auto mb-3">
+                  <!-- <div class="col-md-6 col-sm-9 mx-auto mb-3">
                     <div
                       class="payment-card h-100 grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
                       <div class="corner-check">
@@ -235,8 +268,8 @@
 
                       <button class="blue-btn ml-auto">See Offers</button>
                     </div>
-                  </div>
-                  <div class="col-md-6 col-sm-9 mx-auto mb-3">
+                  </div> -->
+                  <!-- <div class="col-md-6 col-sm-9 mx-auto mb-3">
                     <div
                       class="payment-card h-100 grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
                       <div class="corner-check">
@@ -254,7 +287,7 @@
 
                       <button class="blue-btn ml-auto">Create Plan</button>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-md-6 col-sm-9 mx-auto mb-3">
                     <div
                       class="payment-card h-100 grey-border p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
@@ -311,15 +344,10 @@
                       <p class="text-20 font-weight-bold mb-0">Agency</p>
                       <span class="text-20 font-weight-bold text-blue text-right ml-2">Account General Recoveries</span>
                     </div>
-                    <!-- <div
-                        class="d-flex align-items-center justify-content-between mb-xl-4 mb-2"
-                      >
-                        <p class="text-20 font-weight-bold mb-0">Client</p>
-                        <span
-                          class="text-20 font-weight-bold text-blue text-right ml-2"
-                          >Imas Capital</span
-                        >
-                      </div> -->
+                    <div class="d-flex align-items-center justify-content-between mb-xl-4 mb-2">
+                      <p class="text-20 font-weight-bold mb-0">Client</p>
+                      <span class="text-20 font-weight-bold text-blue text-right ml-2">Imas Capital</span>
+                    </div>
                     <div class="d-flex align-items-center justify-content-between mb-xl-4 mb-2">
                       <p class="text-20 font-weight-bold mb-0">
                         Type of Account
@@ -912,7 +940,7 @@
                         <img class="mx-auto d-block" src="assets/images/calendar.png" alt="">
                       </div>
                       <button data-toggle="modal" data-target="#we-have-a-plan-modal" class="blue-btn mx-auto">
-                        Activate
+                        Proceed To Payment Options
                       </button>
                     </div>
                     <div class="col-lg-8">
@@ -1123,8 +1151,7 @@
                   <div class="modal-content">
                     <div class="modal-body py-5">
                       <div class="blue-box d-flex align-items-center justify-content-center mx-auto mb-5">
-                        <span class="blue-round-check position-static" style="border-width: 3px"><i
-                            class="mdi mdi-check"></i></span>
+                        <span class="mdi mdi-exclamation text-blue" style="font-size: 35p;"></span>
                       </div>
 
                       <h3 class="text-30 text-blue font-weight-bold text-center">
@@ -1216,8 +1243,7 @@
                           Online Banking
                         </h2>
                         <p class="text-20 mb-4">
-                          Simplify your bill payments using the Interac
-                          E-transfer option.
+                          Choose your preferred online bank account and process your payment.
                         </p>
                         <div class="d-flex align-items-end justify-content-between">
                           <img class="sm-imgs" src="assets/images/online-banking.png" alt="" />
@@ -1238,8 +1264,7 @@
                           Interac E-transfer
                         </h2>
                         <p class="text-20 mb-4">
-                          Securely connect a debit Visa or MasterCard to your
-                          StreamPayment account for automatic monthly billing.
+                          Simplify your bill payments using the Interac E-transfer option.
                         </p>
                         <div class="d-flex align-items-end justify-content-between">
                           <img class="sm-imgs" src="assets/images/e-transfer.png" alt="" />
@@ -1729,14 +1754,14 @@
                         <input type="text" class="form-input text-blue font-weight-bold" placeholder="xxxx-xxx-xx"
                           value="xxxx-xxx-xx" />
 
-                        <div class="bullet-point d-flex text-20 pb-3 pt-3">
+                        <!-- <div class="bullet-point d-flex text-20 pb-3 pt-3">
                           <span>6</span>
                           <p class="mb-0">
                             Click
                             <span class="font-weight-bold">Verify</span>, and
                             confirm your request
                           </p>
-                        </div>
+                        </div> -->
 
                         <button data-toggle="modal" data-target="#online-payment2-modal"
                           class="blue-btn size-lg mx-auto size-lg mt-4">
@@ -5272,10 +5297,8 @@
                     <option value="">Canada</option>
                     <option value="">UK</option>
                   </select>
-                  <p class="text-20 mb-1 mt-3">Address</p>
-                  <input type="text" class="form-input" placeholder="Address" />
-                  <p class="text-20 mb-1 mt-3">Postal Code</p>
-                  <input type="text" class="form-input" placeholder="Postal Code" />
+                  <input type="text" class="form-input mb-1 mt-3" placeholder="Address" />
+                  <input type="text" class="form-input mb-1 mt-3" placeholder="Postal Code" />
 
                   <button class="blue-btn ml-auto px-5 mt-3" data-toggle="modal" data-target="#profile-update-modal">
                     Save
@@ -5290,12 +5313,11 @@
                         Update Password
                       </h3>
 
-                      <p class="text-20 mb-1 mt-3">Current Password</p>
-                      <input type="text" class="form-input" placeholder="Current Password" />
-                      <p class="text-20 mb-1 mt-3">New Password</p>
-                      <input type="text" class="form-input" placeholder="New Password" />
-                      <p class="text-20 mb-1 mt-3">Confirm Password</p>
-                      <input type="text" class="form-input" placeholder="Confirm Password" />
+                      <input type="text" class="form-input  mb-1 mt-3" placeholder="Current Password" />
+
+                      <input type="text" class="form-input mb-1 mt-3" placeholder="New Password" />
+
+                      <input type="text" class="form-input mb-1 mt-3" placeholder="Confirm Password" />
 
                       <button class="blue-btn ml-auto px-5 mt-3" data-toggle="modal"
                         data-target="#profile-update-modal">
