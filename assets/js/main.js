@@ -1,25 +1,16 @@
 // navbar animation
-$(".navbar-collapse")
-.on("show.bs.collapse", function () {
-  $(this).addClass("show");
-})
-.on("hide.bs.collapse", function () {
-  $(this).removeClass("show");
+// $(".navbar-collapse")
+// .on("show.bs.collapse", function () {
+//   $(this).addClass("show");
+// })
+// .on("hide.bs.collapse", function () {
+//   $(this).removeClass("show");
+// });
+
+document.querySelector(".sidebar-toggler").addEventListener("click", function () {
+  // document.querySelector(".navbar-collapse").classList.toggle("show");
 });
 
-// document.querySelector(".sidebar-toggler").addEventListener("click", function () {
-
-//   if (document.querySelector(".sidebar-toggler").classList.contains("collapsed")) {
-//     console.log("close");
-//   }else{
-// console.log("open");
-  // }
-  // document.querySelector(".navbar-collapse").classList.add("show");
-// });
-
-// document.querySelector(".navbar-collapse").addEventListener("hide.bs.collapse", function () {
-//   document.querySelector(".navbar-collapse").classList.remove("show");
-// });
 
 // custom sliders
 document

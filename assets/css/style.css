@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  word-break: break-word;
 }
 
 body {
@@ -136,6 +137,7 @@ ul {
   padding: 0 20px;
   border: 0;
   outline: none !important;
+  max-width: 100%;
 }
 
 .grey-btn {
@@ -824,6 +826,7 @@ footer .logo {
 }
 
 /* balance card */
+
 .balance-card {
   padding: 0;
   border: 20px solid #b5b5b5;
@@ -1180,6 +1183,10 @@ footer .logo {
 
     transform: scale(0.7);
   }
+   .circle-wrap {
+    width: 170px;
+    height: 170px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1265,7 +1272,14 @@ footer .logo {
     font-size: 16px;
   }
 }
-
+@media screen and (min-width: 992px){
+  .balance-container>div:nth-of-type(1){
+    min-width: 395px;
+    }
+    .balance-container>div:nth-of-type(2){
+    max-width: calc(100% - 395px);
+    }
+}
 @media screen and (min-width: 1500px) {
   .container {
     max-width: 1400px;
