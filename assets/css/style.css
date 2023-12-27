@@ -138,10 +138,12 @@ ul {
   border: 0;
   outline: none !important;
   max-width: 100%;
+  white-space: nowrap;
 }
 
 .grey-btn {
   background-color: rgb(181, 181, 181);
+  white-space: nowrap;
 }
 
 .blue-btn.size-lg {
