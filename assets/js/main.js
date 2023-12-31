@@ -27,23 +27,7 @@ document
   });
 });
 
-// multistep form
-document.querySelectorAll(".multistep-form").forEach(function (thisForm) {
-thisForm.querySelectorAll(".single-step").forEach(function (thisStep) {
-  const nextBtn = thisStep.querySelector(".next-multistep-form");
-  if (nextBtn) {
-    nextBtn.addEventListener("click", (event) => {
-      currentStep = nextBtn.closest(".single-step");
 
-      nextStep = currentStep.nextElementSibling;
-      if (nextStep) {
-        currentStep.classList.remove("active");
-        nextStep.classList.add("active");
-      }
-    });
-  }
-});
-});
 
 // disable all body when menu opens
 
