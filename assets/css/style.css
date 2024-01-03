@@ -1346,3 +1346,86 @@ footer .logo {
     font-weight: 100 !important;
   }
 }
+
+
+
+
+
+
+
+.circle-img {
+  border: 5px solid #13568f;
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+
+}
+
+
+.circle-img img {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.rectangle {
+  width: 100%;
+  height: 50px;
+border: 4px solid #13568f;
+
+}
+
+.dotted-border-box {
+  width: 100%;
+  height: 175px;
+  border-top: 3px dashed #13568f;
+  position: relative;
+}
+.dotted-border-box .arrow{
+  position: absolute;
+  top: 0;
+  right: -8px;
+  color: #13568f;
+  font-size: 32px;
+  transform: translateY(-51%);
+}
+
+
+@media screen and (max-width: 1750px) {
+  .circle-img {
+    width: 280px;
+    height: 280px;
+  }
+  .dotted-border-box{
+    height: 140px;
+  }
+}
+@media screen and (max-width: 1400px){
+  .circle-img {
+    width: 250px;
+    height: 250px;
+  }
+  .dotted-border-box{
+    height: 125px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .dotted-border-box{
+    width: 1px;
+    height: 500px;
+    border: 0;
+  border-left: 3px dashed #13568f;
+  }
+  .rectangle{
+    height: 220px;
+    width: 100%;
+    max-width: 40px;
+  }
+  .dotted-border-box .arrow{
+    right: -13.5px;
+    top: auto;
+    bottom: -16px;
+    transform: rotate(90deg);
+  }
+}
