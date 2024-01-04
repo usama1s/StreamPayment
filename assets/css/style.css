@@ -221,7 +221,7 @@ ul {
   max-width: 100%;
 }
 
-.sm-imgs {}
+
 
 .blue-box {
   width: 44px;
@@ -1355,14 +1355,13 @@ footer .logo {
 
 .circle-img {
   border: 5px solid #13568f;
-  width: 350px;
-  height: 350px;
   background-color: #fff;
   border-radius: 50%;
   text-align: center;
 
+  width: 250px;
+  height: 250px;
 }
-
 
 .circle-img img {
   width: 40%;
@@ -1370,67 +1369,89 @@ footer .logo {
 }
 
 .rectangle {
+  height: 220px;
   width: 100%;
-  height: 50px;
+  max-width: 40px;
+  
 border: 4px solid #13568f;
+
 
 }
 
 .dotted-border-box {
-  width: 100%;
-  height: 175px;
-  border-top: 3px dashed #13568f;
+  width: 1px;
+  height: 500px;
+  border: 0;
+border-left: 3px dashed #13568f;
+
+
   position: relative;
 }
 .dotted-border-box .arrow{
   position: absolute;
-  top: -2px;
-  right: -3px;
-  /* color: #13568f; */
-  /* font-size: 32px; */
-  transform: translateY(-50%);
+  right: -7px;
+  bottom: -1px;
+ 
   width: 0;
   height: 0;
   border: 9px solid transparent;
   border-right: 0;
   border-left: 16px solid #13568f;
+
+
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 992px) {
+
+  .dotted-border-box .arrow{
+    top: -2px;
+    bottom: auto;
+    right: -3px;
+    transform: translateY(-50%);
+  }
+  .rectangle{
+    width: 100%;
+    height: 50px;
+  border: 4px solid #13568f;
+  max-width: none;
+  }
+  .dotted-border-box{
+    width: 100%;
+    height: 125px;
+    border: 0;
+    border-top: 3px dashed #13568f;
+  }
+    .circle-img {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 
-@media screen and (max-width: 1750px) {
+@media screen and (min-width: 1400px){
   .circle-img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+
+@media screen and (min-width: 1750px) {
+
+  .circle-img {
+    width: 350px;
+    height: 350px;
   }
   .dotted-border-box{
     height: 140px;
   }
 }
-@media screen and (max-width: 1400px){
+
+@media screen and (min-width: 2350px){
   .circle-img {
-    width: 250px;
-    height: 250px;
+    width: 380px;
+    height: 380px;
   }
-  .dotted-border-box{
-    height: 125px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .dotted-border-box{
-    width: 1px;
-    height: 500px;
-    border: 0;
-  border-left: 3px dashed #13568f;
-  }
-  .rectangle{
-    height: 220px;
-    width: 100%;
-    max-width: 40px;
-  }
-  .dotted-border-box .arrow{
-    right: -7px;
-    top: auto;
-    bottom: -1px;
-    transform: rotate(90deg);
-  }
+
 }
