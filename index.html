@@ -710,7 +710,11 @@
                           class="d-flex flex-row justify-content-between flex-wrap mt-3"
                         >
                           <button class="blue-btn size-lg m-0">Print</button>
-                          <button class="blue-btn size-lg m-0">
+                          <button
+                            class="blue-btn size-lg m-0"
+                            data-toggle="modal"
+                            data-target="#cancel-plan-modal"
+                          >
                             Cancel Plan
                           </button>
                         </div>
@@ -772,7 +776,11 @@
                           class="d-flex flex-row justify-content-between flex-wrap mt-3"
                         >
                           <button class="blue-btn size-lg m-0">Print</button>
-                          <button class="blue-btn size-lg m-0">
+                          <button
+                            class="blue-btn size-lg m-0"
+                            data-toggle="modal"
+                            data-target="#cancel-plan-modal"
+                          >
                             Cancel Plan
                           </button>
                         </div>
@@ -824,7 +832,11 @@
                           class="d-flex flex-row justify-content-between flex-wrap mt-3"
                         >
                           <button class="blue-btn size-lg m-0">Print</button>
-                          <button class="blue-btn size-lg m-0">
+                          <button
+                            class="blue-btn size-lg m-0"
+                            data-toggle="modal"
+                            data-target="#cancel-plan-modal"
+                          >
                             Cancel Plan
                           </button>
                         </div>
@@ -927,7 +939,11 @@
                           class="d-flex flex-row justify-content-between flex-wrap mt-3"
                         >
                           <button class="blue-btn size-lg m-0">Print</button>
-                          <button class="blue-btn size-lg m-0">
+                          <button
+                            class="blue-btn size-lg m-0"
+                            data-toggle="modal"
+                            data-target="#cancel-plan-modal"
+                          >
                             Cancel Plan
                           </button>
                         </div>
@@ -1254,6 +1270,63 @@
                 </div>
               </div>
 
+              <div
+                class="modal fade"
+                id="cancel-plan-modal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="cancel-plan-modalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog w-100 h-100 my-0 d-flex align-items-center justify-content-center"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-body py-5">
+                      <div
+                        class="blue-box d-flex align-items-center justify-content-center mx-auto mb-5"
+                      >
+                        <span
+                          class="mdi mdi-exclamation text-blue"
+                          style="font-size: 35px"
+                        ></span>
+                      </div>
+
+                      <h3
+                        class="text-30 text-blue font-weight-bold text-center"
+                      >
+                        Please Confirm
+                      </h3>
+
+                      <p class="text-20 text-center">
+                        You are about to cancel an active plan. Are you sure you
+                        want to cancel this plan?
+                      </p>
+
+                      <div
+                        class="mt-4 d-flex align-items-center justify-content-center"
+                      >
+                        <button
+                          type="button"
+                          class="blue-btn mr-2"
+                          data-dismiss="modal"
+                        >
+                          Confirm
+                        </button>
+                        <button
+                          type="button"
+                          class="blue-btn grey-btn ml-2"
+                          data-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <!-- home page with payment plan end -->
             </div>
             <!-- home page end -->
@@ -1358,6 +1431,7 @@
                         <div class="mb-3 mb-md-0">
                           <div class="img h-200">
                             <img
+                              width="190"
                               class="d-block mx-auto"
                               src="assets/images/several-installments-options.webp"
                               alt=""
@@ -1376,6 +1450,7 @@
                         <div class="mb-3 mb-md-0">
                           <div class="img h-200">
                             <img
+                              width="215"
                               class="d-block mx-auto"
                               src="assets/images/pre-approved-plans.webp"
                               alt=""
@@ -1393,6 +1468,7 @@
                         <div class="mb-3 mb-md-0">
                           <div class="img h-200">
                             <img
+                              width="190"
                               class="d-block mx-auto"
                               src="assets/images/pay-on-time.webp"
                               alt=""
@@ -1985,27 +2061,39 @@
                         </div>
 
                         <h3
-                          class="text-30 text-blue font-weight-bold text-center"
+                          class="text-30 text-blue font-weight-bold text-center mb-3"
                         >
-                          Your Offer Has Been Submitted
+                          Confirm Your Payment Plan
                         </h3>
 
                         <p class="text-20 text-center">
-                          <span class="font-weight-bold"
-                            >Thanks for using StreamPayment.</span
-                          >
+                          <span class="font-weight-bold text-blue "
+                            >Basic Plan</span
+                          > Selected
                           <br />
-                          Check your dashboard for updates, where you’ll see
-                          instructions to complete the custom plan if approved.
+                          This plan will be active starting <span class="font-weight-bold text-blue "
+                          >July 22nd 2021</span
+                        >
                         </p>
 
+                        <div
+                        class="mt-4 d-flex align-items-center justify-content-center"
+                      >
                         <button
                           type="button"
-                          class="blue-btn mx-auto mt-5 next-multistep-form"
+                          class="blue-btn mr-2"
                           data-dismiss="modal"
                         >
-                          Okay
+                          Confirm
                         </button>
+                        <button
+                          type="button"
+                          class="blue-btn grey-btn ml-2"
+                          data-dismiss="modal"
+                        >
+                          Cancel
+                        </button>
+                      </div>
                       </div>
                     </div>
                   </div>
